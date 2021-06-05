@@ -1,8 +1,14 @@
 @import 'setup';
 @import 'header';
 
+// font-family: 'Lora', serif;
+
+// font-family: 'Poppins', sans-serif;
+
 html {
   font-size: 125%;
+  font-family: 'Lora', serif;
+
 }
 
 h1,
@@ -13,8 +19,25 @@ p {
 }
 
 h1 {
-  font-size: 4rem;
-  
+  font-size: 3.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 75px;
+  padding-top: 30px;
+  text-shadow: -2px 2px rgb(149, 123, 123);
+}
+
+h1 span:hover,
+h1 span:focus {
+  color: rgba(79, 8, 8, 0.585);
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: white;
+  padding-bottom: 10px;
+  text-shadow: -1px 1px grey;
 }
 
 img {
@@ -30,12 +53,40 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: white;
+  font-size: 0.8rem;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
 
+
+// Main starts here:
+
+// section: about
+
+.about {
+  padding: 50px 0px 30px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+
+.about-flex {
+  display: flex;
+}
+
+.about-flex div:nth-of-type(1),
+.about-flex div:nth-of-type(2) {
+  width: 50%;
+}
+
+.about-flex div:nth-of-type(1) {
+  margin-right: 25px;
+  line-height: 25px;
+}
 
 
 
