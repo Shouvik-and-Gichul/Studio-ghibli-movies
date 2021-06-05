@@ -276,11 +276,49 @@ template {
   overflow: hidden;
 }
 
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.674)), to(rgba(18, 8, 8, 0.236))), url("../../images/Hero-image 1.jpg");
+  background-image: linear-gradient(rgba(11, 1, 1, 0.674), rgba(18, 8, 8, 0.236)), url("../../images/Hero-image 1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  height: 85vh;
+}
+
+p {
+  font-size: 2rem;
+}
+
 html {
   font-size: 125%;
 }
 
+h1,
+h2,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
 h1 {
   font-size: 4rem;
-  color: blue;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }

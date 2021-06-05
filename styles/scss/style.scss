@@ -1,10 +1,36 @@
 @import 'setup';
+@import 'header';
 
 html {
   font-size: 125%;
 }
 
+h1,
+h2,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
 h1 {
   font-size: 4rem;
-  color: blue;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
