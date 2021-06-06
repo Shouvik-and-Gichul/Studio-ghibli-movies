@@ -1,5 +1,6 @@
-@import "setup";
-@import "header";
+@import 'setup';
+@import 'header';
+@import 'castle-in-the-sky';
 
 // font-family: 'Lora', serif;
 
@@ -7,7 +8,7 @@
 
 html {
   font-size: 125%;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 h1,
@@ -19,7 +20,7 @@ p {
 
 h1 {
   font-size: 3.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 75px;
@@ -37,6 +38,11 @@ h2 {
   color: white;
   padding-bottom: 12px;
   // text-shadow: -1px 1px grey;
+}
+
+h4 {
+  font-size: 1.1rem;
+  color: white;
 }
 
 img {
@@ -87,6 +93,30 @@ p {
 }
 
 // Section: gallery
+.gallery {
+  background-color: #2e3535;
+  h2 {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 15px;
+    padding-left: 0;
+  }
+  img {
+    height: 100%;
+    transition: all 0.15s linear;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      transform: scale(1.2);
+      box-shadow: 8px 8px 8px rgb(18, 168, 238);
+    }
+  }
+}
 
 // Section: contact
 
@@ -104,7 +134,7 @@ form {
   padding-top: 20px;
 }
 
-input[type=email] {
+input[type='email'] {
   padding: 6px;
   font-size: 0.7rem;
   width: 220px;
