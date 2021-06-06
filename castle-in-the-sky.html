@@ -16,10 +16,16 @@
   <body class="castle-in-the-sky">
     <header>
       <div class="wrapper">
-        <h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#movie-collection">The Movies</a></li>
+          </ul>
+        </nav>
+        <!-- <h1>
           Studi<span>o</span> <br />
           Ghibli
-        </h1>
+        </h1> -->
       </div>
       <div class="header-logo wrapper">
         <div>
@@ -41,21 +47,33 @@
           <div>
             <img src="./images/Castle in the Sky.jpg" alt="" />
           </div>
-          <div id="castle-contents">
+          <div class="castle-contents">
             <div>
               <div class="api-fetch">
                 <!-- api content goes here -->
               </div>
-              <div>
-                <a href="https://www.youtube.com/watch?v=WmDebzBANF8"
-                  >Watch Trailer</a
-                >
+              <div class="trailer-section">
+                <button id="trailer">Watch Trailer</button>
+                <div class="trailer-box hidden">
+                  <button class="close">&times;</button>
+                  <iframe
+                    id="youTubeVideo"
+                    allowfullscreen="1"
+                    autoplay="1"
+                    title="Castle in the Sky"
+                    src="https://www.youtube.com/embed/WmDebzBANF8?&enablejsapi=1"
+                    width="500"
+                    height="300"
+                    frameborder="0"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

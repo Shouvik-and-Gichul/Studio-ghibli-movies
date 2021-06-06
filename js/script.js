@@ -1,9 +1,8 @@
 'use strict';
 
-const target = document.querySelector('#contents');
-
 const app = {};
 app.url = 'https://ghibliapi.herokuapp.com/films';
+// const video = document.querySelector('#youTubeVideo');
 
 app.getContents = function () {
   const apiUrl = new URL(app.url);
@@ -26,7 +25,6 @@ app.displayContents = function (data) {
   const h2Element = document.createElement('h2');
   const pElementOne = document.createElement('p');
   const pElementTwo = document.createElement('p');
-  // pElementTwo.setAttribute('class', 'film-specs');
   h4Element.textContent = `Directed by ${data[0].director}`;
   h2Element.textContent = `${data[0].title} ${data[0].original_title}`;
   pElementOne.textContent = data[0].description;
@@ -37,8 +35,30 @@ app.displayContents = function (data) {
   apiFetch.appendChild(pElementTwo);
 };
 
+app.displayTrailer = function () {
+  const trailer = document.querySelector('#trailer');
+  trailer.addEventListener('click', function () {
+    document.querySelector('.trailer-box').classList.toggle('hidden');
+  });
+};
+
+app.closeTrailer = function () {
+  const closeBtn = document.querySelector('.close');
+  closeBtn.addEventListener('click', function () {
+    document.querySelector('.trailer-box').classList.add('hidden');
+    // const video = document.querySelector('#youTubeVideo');
+    // app.stopVideo();
+    const video = document.querySelector('iframe');
+    let source = video.src;
+    video.src = '';
+    video.src = source;
+  });
+};
+
 app.init = function () {
   app.getContents();
+  app.displayTrailer();
+  app.closeTrailer();
 };
 
 app.init();

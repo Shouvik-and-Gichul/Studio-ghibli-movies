@@ -1,6 +1,6 @@
 .castle-in-the-sky header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
-    url('../../images/Hero-image\ 1.jpg');
+    url('../../images/header-images/castle-in-the-sky.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -17,39 +17,57 @@
   }
 }
 
+.castle-in-the-sky nav ul {
+  display: flex;
+  margin: 0;
+  padding: 15px 0;
+  li {
+    padding: 0px 15px 5px 0px;
+  }
+  a {
+    color: black;
+    font-size: 0.6rem;
+  }
+}
+
+.castle-in-the-sky li a:hover,
+.castle-in-the-sky li a:focus {
+  color: blue;
+}
+
 .castle-in-the-sky .about-castle {
   padding: 60px 0px 40px;
   background-color: rgba(7, 7, 7, 0.941);
   .about-castle-flex {
+    position: relative;
     display: flex;
-    .castle-contents div:nth-of-type(1) {
+    .castle-contents .api-fetch {
       display: flex;
+      flex-direction: column;
+      margin-left: 20px;
     }
   }
-  .api-fetch {
+  .castle-contents button {
     margin-left: 20px;
   }
-  // .castle-contents a {
-  //   margin-left: 20px;
-  // }
   p {
     margin-top: 0;
   }
   h4 {
     margin: 0 0 10px;
   }
-  #castle-contents div:nth-of-type(2) {
-    margin-top: 20px;
-    margin-left: 20px;
-    a {
-      color: rgb(231, 188, 78);
-      border: 1px solid white;
-      font-size: 0.8rem;
-      padding: 5px 5px;
-      &:hover,
-      &:focus {
-        color: white;
-      }
-    }
+}
+
+.castle-in-the-sky .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  .close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-size: 1rem;
+    background: transparent;
+    color: white;
   }
 }
