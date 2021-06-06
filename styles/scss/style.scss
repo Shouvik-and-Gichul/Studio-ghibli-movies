@@ -1,5 +1,5 @@
-@import 'setup';
-@import 'header';
+@import "setup";
+@import "header";
 
 // font-family: 'Lora', serif;
 
@@ -7,8 +7,7 @@
 
 html {
   font-size: 125%;
-  font-family: 'Lora', serif;
-
+  font-family: "Lora", serif;
 }
 
 h1,
@@ -20,7 +19,7 @@ p {
 
 h1 {
   font-size: 3.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 75px;
@@ -34,10 +33,10 @@ h1 span:focus {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: white;
-  padding-bottom: 10px;
-  text-shadow: -1px 1px grey;
+  padding-bottom: 12px;
+  // text-shadow: -1px 1px grey;
 }
 
 img {
@@ -64,13 +63,12 @@ p {
   margin: 0 auto;
 }
 
-
 // Main starts here:
 
 // section: about
 
 .about {
-  padding: 50px 0px 30px;
+  padding: 60px 0px 40px;
   background-color: rgba(7, 7, 7, 0.941);
 }
 
@@ -88,7 +86,62 @@ p {
   line-height: 25px;
 }
 
+// Section: gallery
 
+// Section: contact
 
+.contact {
+  text-align: center;
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
 
+.contact p {
+  font-size: 1.1rem;
+}
 
+form {
+  padding-top: 20px;
+}
+
+input[type=email] {
+  padding: 6px;
+  font-size: 0.7rem;
+  width: 220px;
+  border: 0;
+  outline: none;
+}
+
+button {
+  padding: 6px;
+  font-size: 0.7rem;
+  border: 0;
+  margin-left: -3px;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+.social-link ul {
+  display: flex;
+  justify-content: center;
+
+  li {
+    padding: 0px 10px;
+  }
+}
+
+i {
+  color: white;
+  transition: all 0.2s linear;
+}
+
+i:hover,
+i:focus {
+  transform: scale(1.2);
+  cursor: pointer;
+}
