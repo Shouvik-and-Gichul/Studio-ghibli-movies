@@ -1,8 +1,13 @@
-@import 'setup';
-@import 'header';
+@import "setup";
+@import "header";
+
+// font-family: 'Lora', serif;
+
+// font-family: 'Poppins', sans-serif;
 
 html {
   font-size: 125%;
+  font-family: "Lora", serif;
 }
 
 h1,
@@ -13,7 +18,28 @@ p {
 }
 
 h1 {
+
   font-size: 4rem;
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 75px;
+  padding-top: 30px;
+  text-shadow: -2px 2px rgb(149, 123, 123);
+}
+
+h1 span:hover,
+h1 span:focus {
+  color: rgba(79, 8, 8, 0.585);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: white;
+  padding-bottom: 12px;
+  // text-shadow: -1px 1px grey;
+
 }
 
 img {
@@ -29,8 +55,96 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: white;
+  font-size: 0.8rem;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+// Main starts here:
+
+// section: about
+
+.about {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+
+.about-flex {
+  display: flex;
+}
+
+.about-flex div:nth-of-type(1),
+.about-flex div:nth-of-type(2) {
+  width: 50%;
+}
+
+.about-flex div:nth-of-type(1) {
+  margin-right: 25px;
+  line-height: 25px;
+}
+
+// Section: gallery
+
+// Section: contact
+
+.contact {
+  text-align: center;
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+
+.contact p {
+  font-size: 1.1rem;
+}
+
+form {
+  padding-top: 20px;
+}
+
+input[type=email] {
+  padding: 6px;
+  font-size: 0.7rem;
+  width: 220px;
+  border: 0;
+  outline: none;
+}
+
+button {
+  padding: 6px;
+  font-size: 0.7rem;
+  border: 0;
+  margin-left: -3px;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+.social-link ul {
+  display: flex;
+  justify-content: center;
+
+  li {
+    padding: 0px 10px;
+  }
+}
+
+i {
+  color: white;
+  transition: all 0.2s linear;
+}
+
+i:hover,
+i:focus {
+  transform: scale(1.2);
+  cursor: pointer;
 }

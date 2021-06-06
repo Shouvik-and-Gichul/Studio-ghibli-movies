@@ -1,15 +1,40 @@
 header {
   background-image: linear-gradient(
-      rgba(11, 1, 1, 0.674),
-      rgba(18, 8, 8, 0.236)
+      rgba(11, 1, 1, 0.38),
+      rgba(18, 8, 8, 0.085)
     ),
     url('../../images/Hero-image\ 1.jpg');
+
   background-size: cover;
+  background-size: 100% 100%;
+
   background-position: center;
   background-repeat: none;
-  height: 85vh;
+  height: 100vh;
 }
+
 
 p {
   font-size: 2rem;
 }
+
+header {
+  position: relative;
+}
+
+.header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+// .header-logo p {
+//   color: white;
+//   font-size: 0.8rem;
+// }
+

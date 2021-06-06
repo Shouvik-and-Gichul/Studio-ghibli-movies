@@ -277,6 +277,7 @@ template {
 }
 
 header {
+
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.674)), to(rgba(18, 8, 8, 0.236))), url("../../images/Hero-image 1.jpg");
   background-image: linear-gradient(rgba(11, 1, 1, 0.674), rgba(18, 8, 8, 0.236)), url("../../images/Hero-image 1.jpg");
   background-size: cover;
@@ -287,10 +288,39 @@ header {
 
 p {
   font-size: 2rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/Hero-image 1.jpg");
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/Hero-image 1.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+}
+
+header {
+  position: relative;
+}
+
+.header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.header-logo img {
+  width: 160px;
+  height: 80px;
 }
 
 html {
   font-size: 125%;
+  font-family: "Lora", serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+  padding: 0px;
 }
 
 h1,
@@ -301,7 +331,27 @@ p {
 }
 
 h1 {
+
   font-size: 4rem;
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 75px;
+  padding-top: 30px;
+  text-shadow: -2px 2px #957b7b;
+}
+
+h1 span:hover,
+h1 span:focus {
+  color: rgba(79, 8, 8, 0.585);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: white;
+  padding-bottom: 12px;
+
 }
 
 img {
@@ -317,8 +367,95 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: white;
+  font-size: 0.8rem;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+.about {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+
+.about-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-flex div:nth-of-type(1),
+.about-flex div:nth-of-type(2) {
+  width: 50%;
+}
+
+.about-flex div:nth-of-type(1) {
+  margin-right: 25px;
+  line-height: 25px;
+}
+
+.contact {
+  text-align: center;
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+
+.contact p {
+  font-size: 1.1rem;
+}
+
+form {
+  padding-top: 20px;
+}
+
+input[type=email] {
+  padding: 6px;
+  font-size: 0.7rem;
+  width: 220px;
+  border: 0;
+  outline: none;
+}
+
+button {
+  padding: 6px;
+  font-size: 0.7rem;
+  border: 0;
+  margin-left: -3px;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
+.social-link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.social-link ul li {
+  padding: 0px 10px;
+}
+
+i {
+  color: white;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+i:hover,
+i:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
 }
