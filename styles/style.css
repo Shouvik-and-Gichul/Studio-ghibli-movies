@@ -301,8 +301,8 @@ header {
 }
 
 .castle-in-the-sky header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/Hero-image 1.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/Hero-image 1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/castle-in-the-sky.jpg");
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/castle-in-the-sky.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -319,21 +319,47 @@ header {
   height: 80px;
 }
 
+.castle-in-the-sky nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 15px 0;
+}
+.castle-in-the-sky nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.castle-in-the-sky nav ul a {
+  color: black;
+  font-size: 0.6rem;
+}
+
+.castle-in-the-sky li a:hover,
+.castle-in-the-sky li a:focus {
+  color: blue;
+}
+
 .castle-in-the-sky .about-castle {
   padding: 60px 0px 40px;
   background-color: rgba(7, 7, 7, 0.941);
 }
 .castle-in-the-sky .about-castle .about-castle-flex {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.castle-in-the-sky .about-castle .about-castle-flex .castle-contents div:nth-of-type(1) {
+.castle-in-the-sky .about-castle .about-castle-flex .castle-contents .api-fetch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
 }
-.castle-in-the-sky .about-castle .api-fetch {
+.castle-in-the-sky .about-castle .castle-contents button {
   margin-left: 20px;
 }
 .castle-in-the-sky .about-castle p {
@@ -342,17 +368,18 @@ header {
 .castle-in-the-sky .about-castle h4 {
   margin: 0 0 10px;
 }
-.castle-in-the-sky .about-castle #castle-contents div:nth-of-type(2) {
-  margin-top: 20px;
-  margin-left: 20px;
+
+.castle-in-the-sky .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 15%;
 }
-.castle-in-the-sky .about-castle #castle-contents div:nth-of-type(2) a {
-  color: #e7bc4e;
-  border: 1px solid white;
-  font-size: 0.8rem;
-  padding: 5px 5px;
-}
-.castle-in-the-sky .about-castle #castle-contents div:nth-of-type(2) a:hover, .castle-in-the-sky .about-castle #castle-contents div:nth-of-type(2) a:focus {
+.castle-in-the-sky .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background: transparent;
   color: white;
 }
 
@@ -416,6 +443,14 @@ p {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.reveal {
+  display: block;
 }
 
 .about {
