@@ -1,16 +1,44 @@
 'use strict';
 
-const url = new URL('https://ghibliapi.herokuapp.com/films');
-// console.log(url);
-const userInput = document.querySelector('#user-input');
+const target = document.querySelector('#contents');
 
-fetch(url)
-  .then(function (data) {
-    return data.json();
-  })
-  .then(function (response) {
-    // console.log(response);
-    response.forEach(function (item) {
-      console.log(item.title);
+const app = {};
+app.url = 'https://ghibliapi.herokuapp.com/films';
+
+app.getContents = function () {
+  const apiUrl = new URL(app.url);
+  fetch(apiUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (apiData) {
+      // console.log(response);
+      // response.forEach(function (item) {
+      //   console.log(item.title);
+      // });
+      app.displayContents(apiData);
     });
-  });
+};
+
+app.displayContents = function (data) {
+  const apiFetch = document.querySelector('.api-fetch');
+  const h4Element = document.createElement('h4');
+  const h2Element = document.createElement('h2');
+  const pElementOne = document.createElement('p');
+  const pElementTwo = document.createElement('p');
+  // pElementTwo.setAttribute('class', 'film-specs');
+  h4Element.textContent = `Directed by ${data[0].director}`;
+  h2Element.textContent = `${data[0].title} ${data[0].original_title}`;
+  pElementOne.textContent = data[0].description;
+  pElementTwo.textContent = `Year of Production: ${data[0].release_date} Runtime: ${data[0].running_time} Rating: ${data[0].rt_score}`;
+  apiFetch.appendChild(h4Element);
+  apiFetch.appendChild(h2Element);
+  apiFetch.appendChild(pElementOne);
+  apiFetch.appendChild(pElementTwo);
+};
+
+app.init = function () {
+  app.getContents();
+};
+
+app.init();
