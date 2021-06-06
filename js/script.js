@@ -12,7 +12,7 @@ app.getContents = function () {
       return response.json();
     })
     .then(function (apiData) {
-      // console.log(response);
+      console.log(apiData);
       // response.forEach(function (item) {
       //   console.log(item.title);
       // });
