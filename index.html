@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -39,21 +45,80 @@
 
     <main>
       <section class="about">
-        <div class=" about-flex wrapper">
-
+        <div class="about-flex wrapper">
           <div>
-            <h2>The studio Ghibli</h2>
+            <h2>About studio Ghibli</h2>
             <p>
-              Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. The studio is best known for its beloved animated works to have ever graced the screen. Studio Ghibli's highest grossing films include Spirited Away (2001), Ponyo (2008), and Howl's Moving Castle (2004).
+              Studio Ghibli Inc. is a Japanese animation film studio
+              headquartered in Koganei, Tokyo. The studio is best known for its
+              beloved animated works to have ever graced the screen. Studio
+              Ghibli's highest grossing films include Spirited Away (2001),
+              Ponyo (2008), and Howl's Moving Castle (2004).
             </p>
           </div>
 
           <div>
-            <img src="./images/about-gif.gif" alt="a gif image from ponyo movie">
+            <img
+              src="./images/about-gif.gif"
+              alt="a gif image from ponyo movie"
+            />
           </div>
+        </div>
+      </section>
 
+      <section class="gallery">
+        <h2>The Studio ghibli collection</h2>
+
+        <div class="movie-list">
+          <!-- JS & API -->
+        </div>
+      </section>
+
+      <section class="contact">
+        <div>
+          <p>
+            We know you love Studio Ghibli too! Sign up & join the world of
+            Totoro!!
+          </p>
         </div>
 
+        <form action="">
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit">Subscribe</button>
+
+          <nav class="social-link">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.snapchat.com/" target="_blank"
+                  ><i class="fab fa-snapchat-ghost"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+
+        </form>
       </section>
     </main>
 
