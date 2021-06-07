@@ -41,12 +41,23 @@ app.displayContents = function (data) {
       h3Element.textContent = `Directed by ${data[1].director}`;
       h2Element.textContent = `${data[1].title} ${data[1].original_title}`;
       pElementOne.textContent = data[1].description;
-      pElementTwo.textContent = `Year of Production: ${data[1].release_date}, Runtime: ${data[1].running_time} Rating: ${data[1].rt_score}`;
+      pElementTwo.textContent = `Year of Production: ${data[1].release_date}, Runtime: ${data[1].running_time}, Rating: ${data[1].rt_score}`;
       apiFetch.appendChild(h3Element);
       apiFetch.appendChild(h2Element);
       apiFetch.appendChild(pElementOne);
       apiFetch.appendChild(pElementTwo);
-    }
+    } else if (body.className === "my-neighbor-totoro") {
+      h3Element.textContent = `Directed by ${data[2].director}`;
+      h2Element.textContent = `${data[2].title} ${data[2].original_title}`;
+      pElementOne.textContent = data[2].description;
+      pElementTwo.textContent = `Year of Production: ${data[2].release_date}, Runtime: ${data[2].running_time}, Rating: ${data[2].rt_score}`;
+      apiFetch.appendChild(h3Element);
+      apiFetch.appendChild(h2Element);
+      apiFetch.appendChild(pElementOne);
+      apiFetch.appendChild(pElementTwo);
+    } 
+
+    
   }
 };
 
