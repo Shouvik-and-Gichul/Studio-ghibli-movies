@@ -277,8 +277,8 @@ template {
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/Hero-image 1.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/Hero-image 1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/Hero-image 1.jpg");
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/Hero-image 1.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -324,19 +324,26 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 15px 0;
+  padding: 25px 0;
 }
 .castle-in-the-sky nav ul li {
   padding: 0px 15px 5px 0px;
 }
 .castle-in-the-sky nav ul a {
-  color: black;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  color: #260404;
+  text-transform: uppercase;
 }
 
 .castle-in-the-sky li a:hover,
 .castle-in-the-sky li a:focus {
-  color: blue;
+  border-bottom: 1px solid #2d281b;
+  -webkit-box-shadow: -1px 1px 2px #211d15;
+          box-shadow: -1px 1px 2px #211d15;
 }
 
 .castle-in-the-sky .about-castle {
@@ -357,13 +364,17 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .castle-in-the-sky .about-castle .castle-contents button {
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 8px;
 }
 .castle-in-the-sky .about-castle p {
   margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 25px;
 }
 .castle-in-the-sky .about-castle h4 {
   margin: 0 0 10px;
@@ -383,6 +394,100 @@ header {
   color: white;
 }
 
+.grave-of-the-fireflies header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/fireflies-header-2.jpg");
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/fireflies-header-2.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+  position: relative;
+}
+.grave-of-the-fireflies header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.grave-of-the-fireflies header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.grave-of-the-fireflies nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.grave-of-the-fireflies nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.grave-of-the-fireflies nav ul a {
+  color: white;
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.grave-of-the-fireflies li a:hover,
+.grave-of-the-fireflies li a:focus {
+  border-bottom: 1px solid #908a7d;
+  -webkit-box-shadow: -1px 1px 2px #6a4803;
+          box-shadow: -1px 1px 2px #6a4803;
+}
+
+.grave-of-the-fireflies .about-fireflies {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.grave-of-the-fireflies .about-fireflies .about-fireflies-flex {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.grave-of-the-fireflies .about-fireflies .about-fireflies-flex .fireflies-contents .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+.grave-of-the-fireflies .about-fireflies .fireflies-contents button {
+  margin-left: 20px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.grave-of-the-fireflies .about-fireflies p {
+  margin-top: 0;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.grave-of-the-fireflies .about-fireflies h4 {
+  margin: 0 0 10px;
+}
+
+.grave-of-the-fireflies .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 15%;
+}
+.grave-of-the-fireflies .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
 html {
   font-size: 125%;
   font-family: "Lora", serif;
@@ -390,6 +495,7 @@ html {
 
 h1,
 h2,
+h3,
 p {
   margin: 0px;
   padding: 0px;
@@ -416,9 +522,10 @@ h2 {
   padding-bottom: 12px;
 }
 
-h4 {
+h3 {
   font-size: 1.1rem;
   color: white;
+  padding-bottom: 10px;
 }
 
 img {
@@ -449,10 +556,6 @@ p {
   display: none;
 }
 
-.reveal {
-  display: block;
-}
-
 .about {
   padding: 60px 0px 40px;
   background-color: rgba(7, 7, 7, 0.941);
@@ -480,18 +583,20 @@ p {
 .gallery h2 {
   text-align: center;
   padding-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .gallery ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-gap: 15px;
   padding-left: 0;
+  padding-bottom: 50px;
+  margin: 0px;
 }
 .gallery img {
   height: 100%;
-  -webkit-transition: all 0.15s linear;
-  transition: all 0.15s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .gallery img:hover, .gallery img:focus {
   cursor: pointer;
@@ -560,4 +665,22 @@ i:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   cursor: pointer;
+}
+
+footer {
+  padding: 20px 0px;
+  background-color: #2e3535;
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+
+footer a:hover,
+footer a:focus {
+  display: inline-block;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  color: aqua;
+  background-color: black;
 }

@@ -1,6 +1,7 @@
 @import 'setup';
 @import 'header';
 @import 'castle-in-the-sky';
+@import 'grave-of-the-fireflies';
 
 // font-family: 'Lora', serif;
 
@@ -13,6 +14,7 @@ html {
 
 h1,
 h2,
+h3,
 p {
   margin: 0px;
   padding: 0px;
@@ -40,9 +42,11 @@ h2 {
   // text-shadow: -1px 1px grey;
 }
 
-h4 {
+h3 {
   font-size: 1.1rem;
   color: white;
+  padding-bottom: 10px;
+
 }
 
 img {
@@ -73,9 +77,9 @@ p {
   display: none;
 }
 
-.reveal {
-  display: block;
-}
+// .reveal {
+//   display: block;
+// }
 
 // Main starts here:
 
@@ -106,17 +110,19 @@ p {
   h2 {
     text-align: center;
     padding-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-gap: 15px;
     padding-left: 0;
+    padding-bottom: 50px;
+    margin: 0px;
   }
   img {
     height: 100%;
-    transition: all 0.15s linear;
+    transition: all 0.20s linear;
     &:hover,
     &:focus {
       cursor: pointer;
@@ -182,4 +188,22 @@ i:hover,
 i:focus {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+footer {
+  padding: 20px 0px;
+  background-color: #2e3535;
+  // text-transform: uppercase;
+  text-align: center;
+  a {
+    color: white;
+  }
+}
+
+footer a:hover,
+footer a:focus {
+  display: inline-block;
+  transform: scale(2);
+  color: aqua;
+  background-color: black;
 }
