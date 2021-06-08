@@ -57,6 +57,15 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
+    } else if (body.className === 'the-cat-returns' && index === 11) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
     }
   });
 };
@@ -80,7 +89,7 @@ app.makeAndAppendElement = function (h3, h2, p1, p2, apiFetch, getApiData) {
   h3.textContent = `Directed by ${getApiData.director}`;
   h2.textContent = `${getApiData.title} ${getApiData.original_title}`;
   p1.textContent = `${getApiData.description}`;
-  p2.textContent = `Year of Production: ${getApiData.release_date}, Runtime: ${getApiData.running_time}, Rating: ${getApiData.rt_score}`;
+  p2.textContent = `Year of Production: ${getApiData.release_date}, Runtime: ${getApiData.running_time} (minutes), Rating: ${getApiData.rt_score}`;
   apiFetch.appendChild(h3);
   apiFetch.appendChild(h2);
   apiFetch.appendChild(p1);
