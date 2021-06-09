@@ -84,6 +84,15 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
+    } else if (body.className === 'tales-from-earthsea' && index === 13) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
     }
   });
 };
