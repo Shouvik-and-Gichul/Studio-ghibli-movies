@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 const app = {};
-app.url = 'https://ghibliapi.herokuapp.com/films';
+app.url = "https://ghibliapi.herokuapp.com/films";
 
 app.getContents = function () {
   fetch(app.url)
@@ -14,13 +14,13 @@ app.getContents = function () {
 };
 
 app.displayContents = function (data) {
-  const body = document.querySelector('body');
-  const apiFetch = document.querySelector('.api-fetch');
+  const body = document.querySelector("body");
+  const apiFetch = document.querySelector(".api-fetch");
   data.forEach(function (apiData, index) {
-    const h3Element = document.createElement('h3');
-    const h2Element = document.createElement('h2');
-    const pElementOne = document.createElement('p');
-    const pElementTwo = document.createElement('p');
+    const h3Element = document.createElement("h3");
+    const h2Element = document.createElement("h2");
+    const pElementOne = document.createElement("p");
+    const pElementTwo = document.createElement("p");
     const {
       director,
       title,
@@ -30,7 +30,7 @@ app.displayContents = function (data) {
       running_time,
       rt_score,
     } = apiData;
-    if (body.className === 'castle-in-the-sky' && index === 0) {
+    if (body.className === "castle-in-the-sky" && index === 0) {
       app.makeAndAppendElement(
         h3Element,
         h2Element,
@@ -39,7 +39,7 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
-    } else if (body.className === 'grave-of-the-fireflies' && index === 1) {
+    } else if (body.className === "grave-of-the-fireflies" && index === 1) {
       app.makeAndAppendElement(
         h3Element,
         h2Element,
@@ -48,7 +48,8 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
-    } else if (body.className === 'spirited-away' && index === 10) {
+    
+    } else if (body.className === "my-neighbor-totoro" && index === 2) {
       app.makeAndAppendElement(
         h3Element,
         h2Element,
@@ -57,7 +58,16 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
-    } else if (body.className === 'the-cat-returns' && index === 11) {
+      } else if (body.className === "spirited-away" && index === 10) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === "the-cat-returns" && index === 11) {
       app.makeAndAppendElement(
         h3Element,
         h2Element,
@@ -97,19 +107,19 @@ app.makeAndAppendElement = function (h3, h2, p1, p2, apiFetch, getApiData) {
 };
 
 app.displayTrailer = function () {
-  const trailer = document.querySelector('#trailer');
-  trailer.addEventListener('click', function () {
-    document.querySelector('.trailer-box').classList.toggle('hidden');
+  const trailer = document.querySelector("#trailer");
+  trailer.addEventListener("click", function () {
+    document.querySelector(".trailer-box").classList.toggle("hidden");
   });
 };
 
 app.closeTrailer = function () {
-  const closeBtn = document.querySelector('.close');
-  closeBtn.addEventListener('click', function () {
-    document.querySelector('.trailer-box').classList.toggle('hidden');
-    const video = document.querySelector('iframe');
+  const closeBtn = document.querySelector(".close");
+  closeBtn.addEventListener("click", function () {
+    document.querySelector(".trailer-box").classList.toggle("hidden");
+    const video = document.querySelector("iframe");
     let source = video.src;
-    video.src = '';
+    video.src = "";
     video.src = source;
   });
 };
