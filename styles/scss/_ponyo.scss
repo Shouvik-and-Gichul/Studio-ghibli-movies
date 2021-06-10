@@ -46,7 +46,8 @@
   background-color: rgba(7, 7, 7, 0.941);
   .about-ponyo-flex {
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
     .ponyo-contents .api-fetch {
       display: flex;
       flex-direction: column;

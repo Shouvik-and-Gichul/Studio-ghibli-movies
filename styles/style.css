@@ -634,9 +634,8 @@ header {
 }
 .spirited-away .about-spirited .about-spirited-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .spirited-away .about-spirited .about-spirited-flex .spirited-contents .api-fetch {
   display: -webkit-box;
@@ -728,9 +727,8 @@ header {
 }
 .the-cat-returns .about-cat .about-cat-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .the-cat-returns .about-cat .about-cat-flex .cat-contents .api-fetch {
   display: -webkit-box;
@@ -822,9 +820,8 @@ header {
 }
 .howls-moving-castle .about-howl .about-howl-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .howls-moving-castle .about-howl .about-howl-flex .howl-contents .api-fetch {
   display: -webkit-box;
@@ -916,9 +913,8 @@ header {
 }
 .tales-from-earthsea .about-tales .about-tales-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .tales-from-earthsea .about-tales .about-tales-flex .tales-contents .api-fetch {
   display: -webkit-box;
@@ -1010,9 +1006,8 @@ header {
 }
 .ponyo .about-ponyo .about-ponyo-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .ponyo .about-ponyo .about-ponyo-flex .ponyo-contents .api-fetch {
   display: -webkit-box;
@@ -1104,11 +1099,10 @@ header {
 }
 .the-secret-world-of-arrietty .about-arrietty .about-arrietty-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
-.the-secret-world-of-arrietty .about-arrietty .about-arrietty-flex .arrietty-contents .api-fetch {
+.the-secret-world-of-arrietty .about-arrietty .about-arrietty-flex .arriety-contents .api-fetch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1118,7 +1112,7 @@ header {
           flex-direction: column;
   margin-left: 30px;
 }
-.the-secret-world-of-arrietty .about-arrietty .arrietty-contents button {
+.the-secret-world-of-arrietty .about-arrietty .arriety-contents button {
   margin-left: 30px;
   margin-top: 15px;
   padding: 8px;
@@ -1198,9 +1192,8 @@ header {
 }
 .from-up-on-poppy-hill .about-poppyhill .about-poppyhill-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .from-up-on-poppy-hill .about-poppyhill .about-poppyhill-flex .poppyhill-contents .api-fetch {
   display: -webkit-box;
@@ -1292,9 +1285,8 @@ header {
 }
 .the-wind-rises .about-wind .about-wind-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .the-wind-rises .about-wind .about-wind-flex .wind-contents .api-fetch {
   display: -webkit-box;
@@ -1386,9 +1378,8 @@ header {
 }
 .the-tale-of-the-princess-kaguya .about-kaguya .about-kaguya-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .the-tale-of-the-princess-kaguya .about-kaguya .about-kaguya-flex .kaguya-contents .api-fetch {
   display: -webkit-box;
@@ -1480,9 +1471,8 @@ header {
 }
 .when-marine-was-there .about-marine .about-marine-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .when-marine-was-there .about-marine .about-marine-flex .marine-contents .api-fetch {
   display: -webkit-box;
@@ -1557,7 +1547,7 @@ header {
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
-  color: #0f65c9;
+  color: #eef7a5;
   text-transform: uppercase;
 }
 
@@ -1574,9 +1564,8 @@ header {
 }
 .the-red-turtle .about-turtle .about-turtle-flex {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
 }
 .the-red-turtle .about-turtle .about-turtle-flex .turtle-contents .api-fetch {
   display: -webkit-box;
