@@ -132,6 +132,36 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
+    } else if (
+      body.className === 'the-tale-of-the-princess-kaguya' &&
+      index === 18
+    ) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'when-marine-was-there' && index === 19) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'the-red-turtle' && index === 20) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
     }
   });
 };

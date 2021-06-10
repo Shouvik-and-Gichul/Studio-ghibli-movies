@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>The Tale of the Princess Kaguya</title>
+  </head>
+  <body class="the-tale-of-the-princess-kaguya">
+    <header>
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#movie-collection">The Movies</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-logo wrapper">
+        <div>
+          <a href="https://www.ghibli.jp/" target="_blank"
+            ><img
+              src="./images/ghibli_logo_white-1.png"
+              alt="Studio ghibli logo image"
+            />
+          </a>
+        </div>
+        <div>
+      </div>
+    </header>
+  
+    <main>
+      <section class="about-kaguya">
+        <div class="about-kaguya-flex wrapper">
+          <div>
+            <img src="./images/The Tale of the Princess Kaguya.jpg" alt="The Tale of the Princess Kaguya poster" />
+          </div>
+          <div class="kaguya-contents">
+            <div>
+              <div class="api-fetch">
+                <!-- api content goes here -->
+              </div>
+              <div class="trailer-section">
+                <button id="trailer">Watch Trailer</button>
+                <div class="trailer-box hidden">
+                  <button class="close">&times;</button>
+                  <iframe
+                    id="youTubeVideo"
+                    title="The Tale of the Princess Kaguya"
+                    src="https://www.youtube.com/embed/c3Se53lqGRM?&enablejsapi=1"
+                    width="500"
+                    height="300"
+                    frameborder="0"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <footer>
+      <p>
+        Copyright &copy
+        <a href="https://www.gichul-j.com/" target="_blank">Gichul</a>
+        &
+        <a href="https://www.royshouvik.com/" target="_blank">Shouvik</a>, Juno,
+        2021
+      </p>
+    </footer>
+  
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
