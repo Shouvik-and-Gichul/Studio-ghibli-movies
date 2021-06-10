@@ -3,6 +3,10 @@
 const app = {};
 app.url = 'https://ghibliapi.herokuapp.com/films';
 
+// const variable = await fetch(app.url);
+// const otherVariable = await variable.json();
+// return otherVariable;
+
 app.getContents = function () {
   fetch(app.url)
     .then(function (response) {
@@ -277,6 +281,7 @@ app.closeTrailer = function () {
 
 app.init = function () {
   app.getContents();
+
   app.displayTrailer();
   app.closeTrailer();
 };
