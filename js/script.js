@@ -93,6 +93,45 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
+    } else if (body.className === 'ponyo' && index === 14) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (
+      body.className === 'the-secret-world-of-arrietty' &&
+      index === 15
+    ) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'from-up-on-poppy-hill' && index === 16) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'the-wind-rises' && index === 17) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
     }
   });
 };
