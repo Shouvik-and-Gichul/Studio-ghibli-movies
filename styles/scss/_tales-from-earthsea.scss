@@ -1,6 +1,6 @@
-.the-cat-returns header {
+.tales-from-earthsea header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
-    url('../../images/header-images/the-cat-returns-header.jpg');
+    url('../../images/header-images/tales-from-earthsea-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   }
 }
 
-.the-cat-returns nav ul {
+.tales-from-earthsea nav ul {
   display: flex;
   margin: 0;
   padding: 25px 0;
@@ -35,27 +35,26 @@
   }
 }
 
-.the-cat-returns li a:hover,
-.the-cat-returns li a:focus {
-  border-bottom: 1px solid rgb(252, 242, 218);
-  box-shadow: -1px 1px 2px rgb(255, 234, 193);
+.tales-from-earthsea li a:hover,
+.tales-from-earthsea li a:focus {
+  border-bottom: 1px solid rgb(255, 0, 0);
+  box-shadow: -1px 1px 2px rgb(255, 0, 0);
 }
 
-.the-cat-returns .about-cat {
+.tales-from-earthsea .about-tales {
   padding: 60px 0px 40px;
   background-color: rgba(7, 7, 7, 0.941);
-  .about-cat-flex {
+  .about-tales-flex {
     position: relative;
-    // display: flex;
     display: grid;
     grid-template-columns: 1.5fr 2.5fr;
-    .cat-contents .api-fetch {
+    .tales-contents .api-fetch {
       display: flex;
       flex-direction: column;
       margin-left: 20px;
     }
   }
-  .cat-contents button {
+  .tales-contents button {
     margin-left: 20px;
     margin-top: 15px;
     padding: 8px;
@@ -70,7 +69,7 @@
   }
 }
 
-.the-cat-returns .trailer-box {
+.tales-from-earthsea .trailer-box {
   position: absolute;
   top: 0;
   right: 18%;
