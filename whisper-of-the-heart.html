@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Whisper of the heart</title>
+  </head>
+  <body class="whisper-of-the-heart">
+    <header>
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#movie-collection">The Movies</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-logo wrapper">
+        <div>
+          <!-- <p>Brought to you by:</p> -->
+          <a href="https://www.ghibli.jp/" target="_blank"
+            ><img
+              src="./images/ghibli_logo_white-1.png"
+              alt="Studio ghibli logo image"
+            />
+          </a>
+        </div>
+        <div></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-whisper">
+        <div class="about-whisper-flex wrapper">
+          <div>
+            <img
+              src="./images/Whisper of the heart.png"
+              alt="whisper of the heart movie poster"
+            />
+          </div>
+          <div class="whisper-contents">
+            <div>
+              <div class="api-fetch">
+                <!-- api content goes here -->
+              </div>
+              <div class="trailer-section">
+                <button id="trailer">Watch Trailer</button>
+                <div class="trailer-box hidden">
+                  <button class="close">&times;</button>
+                  <iframe
+                    id="youTubeVideo"
+                    allowfullscreen="1"
+                    autoplay="1"
+                    title="Whisper of the heart"
+                    src="https://www.youtube.com/embed/0pVkiod6V0U?&enablejsapi=1"
+                    width="500"
+                    height="300"
+                    frameborder="0"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Copyright &copy
+        <a href="https://www.gichul-j.com/" target="_blank">Gichul</a>
+        &
+        <a href="https://www.royshouvik.com/" target="_blank">Shouvik</a>, Juno,
+        2021
+      </p>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
