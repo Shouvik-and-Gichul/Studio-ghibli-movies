@@ -34,7 +34,7 @@ figure {
 
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -53,7 +53,7 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -142,24 +142,24 @@ select {
 }
 
 button,
-html [type=button],
-[type=reset],
-[type=submit] {
+html [type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -169,7 +169,7 @@ fieldset {
 
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -186,25 +186,25 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox],
-[type=radio] {
+[type='checkbox'],
+[type='radio'] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -238,7 +238,7 @@ template {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: "";
+  content: '';
   clear: both;
   height: 0;
 }
@@ -257,7 +257,7 @@ template {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0);
   overflow: hidden;
 }
@@ -271,14 +271,22 @@ template {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/Hero-image 1.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/Hero-image 1.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/Hero-image 1.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/Hero-image 1.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -301,8 +309,16 @@ header {
 }
 
 .castle-in-the-sky header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/castle-in-the-sky.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/castle-in-the-sky.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/castle-in-the-sky.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/castle-in-the-sky.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -331,7 +347,7 @@ header {
 }
 .castle-in-the-sky nav ul a {
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -343,7 +359,7 @@ header {
 .castle-in-the-sky li a:focus {
   border-bottom: 1px solid #2d281b;
   -webkit-box-shadow: -1px 1px 2px #211d15;
-          box-shadow: -1px 1px 2px #211d15;
+  box-shadow: -1px 1px 2px #211d15;
 }
 
 .castle-in-the-sky .about-castle {
@@ -355,14 +371,18 @@ header {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
 }
-.castle-in-the-sky .about-castle .about-castle-flex .castle-contents .api-fetch {
+.castle-in-the-sky
+  .about-castle
+  .about-castle-flex
+  .castle-contents
+  .api-fetch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 30px;
 }
 .castle-in-the-sky .about-castle .castle-contents button {
@@ -394,8 +414,16 @@ header {
 }
 
 .grave-of-the-fireflies header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/fireflies-header-2.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/fireflies-header-2.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/fireflies-header-2.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/fireflies-header-2.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -425,7 +453,7 @@ header {
 .grave-of-the-fireflies nav ul a {
   color: white;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -436,7 +464,7 @@ header {
 .grave-of-the-fireflies li a:focus {
   border-bottom: 1px solid #908a7d;
   -webkit-box-shadow: -1px 1px 2px #6a4803;
-          box-shadow: -1px 1px 2px #6a4803;
+  box-shadow: -1px 1px 2px #6a4803;
 }
 
 .grave-of-the-fireflies .about-fireflies {
@@ -448,14 +476,18 @@ header {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
 }
-.grave-of-the-fireflies .about-fireflies .about-fireflies-flex .fireflies-contents .api-fetch {
+.grave-of-the-fireflies
+  .about-fireflies
+  .about-fireflies-flex
+  .fireflies-contents
+  .api-fetch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .grave-of-the-fireflies .about-fireflies .fireflies-contents button {
@@ -487,8 +519,16 @@ header {
 }
 
 .my-neighbor-totoro header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/totoro-header.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/totoro-header.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/totoro-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/totoro-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -518,7 +558,7 @@ header {
 .my-neighbor-totoro nav ul a {
   color: #fc9d9d;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -529,7 +569,7 @@ header {
 .my-neighbor-totoro li a:focus {
   border-bottom: 1px solid #8a5f01;
   -webkit-box-shadow: -1px 1px 2px #6a4803;
-          box-shadow: -1px 1px 2px #6a4803;
+  box-shadow: -1px 1px 2px #6a4803;
 }
 
 .my-neighbor-totoro .about-totoro {
@@ -541,14 +581,18 @@ header {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
 }
-.my-neighbor-totoro .about-totoro .about-totoro-flex .totoro-contents .api-fetch {
+.my-neighbor-totoro
+  .about-totoro
+  .about-totoro-flex
+  .totoro-contents
+  .api-fetch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .my-neighbor-totoro .about-totoro .totoro-contents button {
@@ -580,8 +624,16 @@ header {
 }
 
 .kiki-delivery-service header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/kiki-header-3.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/kiki-header-3.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/kiki-header-3.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/kiki-header-3.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -611,7 +663,7 @@ header {
 .kiki-delivery-service nav ul a {
   color: #fcf1bb;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -622,7 +674,7 @@ header {
 .kiki-delivery-service li a:focus {
   border-bottom: 1px solid #4b4b4b;
   -webkit-box-shadow: -1px 1px 2px #95b4bf;
-          box-shadow: -1px 1px 2px #95b4bf;
+  box-shadow: -1px 1px 2px #95b4bf;
 }
 
 .kiki-delivery-service .about-kiki {
@@ -640,8 +692,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .kiki-delivery-service .about-kiki .kiki-contents button {
@@ -673,8 +725,16 @@ header {
 }
 
 .only-yesterday header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/yesterday-header.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/yesterday-header.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/yesterday-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/yesterday-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -704,7 +764,7 @@ header {
 .only-yesterday nav ul a {
   color: white;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -715,7 +775,7 @@ header {
 .only-yesterday li a:focus {
   border-bottom: 1px solid #74643d;
   -webkit-box-shadow: -1px 1px 2px #546d72;
-          box-shadow: -1px 1px 2px #546d72;
+  box-shadow: -1px 1px 2px #546d72;
 }
 
 .only-yesterday .about-yesterday {
@@ -727,14 +787,18 @@ header {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
 }
-.only-yesterday .about-yesterday .about-yesterday-flex .yesterday-contents .api-fetch {
+.only-yesterday
+  .about-yesterday
+  .about-yesterday-flex
+  .yesterday-contents
+  .api-fetch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .only-yesterday .about-yesterday .yesterday-contents button {
@@ -766,8 +830,16 @@ header {
 }
 
 .porco-rosso header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/porco-header.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/porco-header.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/porco-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/porco-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -797,7 +869,7 @@ header {
 .porco-rosso nav ul a {
   color: white;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -808,7 +880,7 @@ header {
 .porco-rosso li a:focus {
   border-bottom: 1px solid #74643d;
   -webkit-box-shadow: -1px 1px 2px #546d72;
-          box-shadow: -1px 1px 2px #546d72;
+  box-shadow: -1px 1px 2px #546d72;
 }
 
 .porco-rosso .about-porco {
@@ -826,8 +898,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .porco-rosso .about-porco .porco-contents button {
@@ -859,8 +931,16 @@ header {
 }
 
 .pom-poko header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/pom-poko-header.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/pom-poko-header.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/pom-poko-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/pom-poko-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -890,7 +970,7 @@ header {
 .pom-poko nav ul a {
   color: white;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -901,7 +981,7 @@ header {
 .pom-poko li a:focus {
   border-bottom: 1px solid #acac53;
   -webkit-box-shadow: -1px 1px 2px #19210f;
-          box-shadow: -1px 1px 2px #19210f;
+  box-shadow: -1px 1px 2px #19210f;
 }
 
 .pom-poko .about-pom {
@@ -919,8 +999,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .pom-poko .about-pom .pom-contents button {
@@ -952,8 +1032,16 @@ header {
 }
 
 .whisper-of-the-heart header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/whisper-of-the-heart-header.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/whisper-of-the-heart-header.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/whisper-of-the-heart-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/whisper-of-the-heart-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -983,7 +1071,7 @@ header {
 .whisper-of-the-heart nav ul a {
   color: white;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -994,7 +1082,7 @@ header {
 .whisper-of-the-heart li a:focus {
   border-bottom: 1px solid #626254;
   -webkit-box-shadow: -1px 1px 2px #19210f;
-          box-shadow: -1px 1px 2px #19210f;
+  box-shadow: -1px 1px 2px #19210f;
 }
 
 .whisper-of-the-heart .about-whisper {
@@ -1006,14 +1094,18 @@ header {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
 }
-.whisper-of-the-heart .about-whisper .about-whisper-flex .whisper-contents .api-fetch {
+.whisper-of-the-heart
+  .about-whisper
+  .about-whisper-flex
+  .whisper-contents
+  .api-fetch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .whisper-of-the-heart .about-whisper .whisper-contents button {
@@ -1045,8 +1137,16 @@ header {
 }
 
 .princess-mononoke header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/mononoke-header.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/mononoke-header.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/mononoke-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/mononoke-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -1076,7 +1176,7 @@ header {
 .princess-mononoke nav ul a {
   color: #fcf1bb;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -1087,7 +1187,7 @@ header {
 .princess-mononoke li a:focus {
   border-bottom: 1px solid #4b4b4b;
   -webkit-box-shadow: -1px 1px 2px #95b4bf;
-          box-shadow: -1px 1px 2px #95b4bf;
+  box-shadow: -1px 1px 2px #95b4bf;
 }
 
 .princess-mononoke .about-mononoke {
@@ -1099,14 +1199,18 @@ header {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
 }
-.princess-mononoke .about-mononoke .about-mononoke-flex .mononoke-contents .api-fetch {
+.princess-mononoke
+  .about-mononoke
+  .about-mononoke-flex
+  .mononoke-contents
+  .api-fetch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .princess-mononoke .about-mononoke .mononoke-contents button {
@@ -1138,8 +1242,16 @@ header {
 }
 
 .the-yamadas header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/the-yamadas-header.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/the-yamadas-header.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/the-yamadas-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/the-yamadas-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -1169,7 +1281,7 @@ header {
 .the-yamadas nav ul a {
   color: #fcf1bb;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -1180,7 +1292,7 @@ header {
 .the-yamadas li a:focus {
   border-bottom: 1px solid #2f2b2b;
   -webkit-box-shadow: -1px 1px 2px #6c6351;
-          box-shadow: -1px 1px 2px #6c6351;
+  box-shadow: -1px 1px 2px #6c6351;
 }
 
 .the-yamadas .about-yamadas {
@@ -1198,8 +1310,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .the-yamadas .about-yamadas .yamadas-contents button {
@@ -1231,8 +1343,16 @@ header {
 }
 
 .spirited-away header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/spirited-away-header.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/spirited-away-header.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/spirited-away-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/spirited-away-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1262,7 +1382,7 @@ header {
 .spirited-away nav ul a {
   color: white;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -1273,7 +1393,7 @@ header {
 .spirited-away li a:focus {
   border-bottom: 1px solid #fcf2da;
   -webkit-box-shadow: -1px 1px 2px #ffeac1;
-          box-shadow: -1px 1px 2px #ffeac1;
+  box-shadow: -1px 1px 2px #ffeac1;
 }
 
 .spirited-away .about-spirited {
@@ -1285,14 +1405,18 @@ header {
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
 }
-.spirited-away .about-spirited .about-spirited-flex .spirited-contents .api-fetch {
+.spirited-away
+  .about-spirited
+  .about-spirited-flex
+  .spirited-contents
+  .api-fetch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .spirited-away .about-spirited .spirited-contents button {
@@ -1324,8 +1448,16 @@ header {
 }
 
 .the-cat-returns header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/the-cat-returns-header.jpg");
-  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/the-cat-returns-header.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/the-cat-returns-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/the-cat-returns-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1355,7 +1487,7 @@ header {
 .the-cat-returns nav ul a {
   color: white;
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -1366,7 +1498,7 @@ header {
 .the-cat-returns li a:focus {
   border-bottom: 1px solid #fcf2da;
   -webkit-box-shadow: -1px 1px 2px #ffeac1;
-          box-shadow: -1px 1px 2px #ffeac1;
+  box-shadow: -1px 1px 2px #ffeac1;
 }
 
 .the-cat-returns .about-cat {
@@ -1384,8 +1516,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20px;
 }
 .the-cat-returns .about-cat .cat-contents button {
@@ -1405,7 +1537,7 @@ header {
 .the-cat-returns .trailer-box {
   position: absolute;
   top: 0;
-  right: 15%;
+  right: 18%;
 }
 .the-cat-returns .trailer-box .close {
   position: absolute;
@@ -1416,9 +1548,934 @@ header {
   color: white;
 }
 
+.howls-moving-castle header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/howls-moving-castle-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/howls-moving-castle-header.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.howls-moving-castle header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.howls-moving-castle header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.howls-moving-castle nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.howls-moving-castle nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.howls-moving-castle nav ul a {
+  color: white;
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.howls-moving-castle li a:hover,
+.howls-moving-castle li a:focus {
+  border-bottom: 1px solid #fcf2da;
+  -webkit-box-shadow: -1px 1px 2px #ffeac1;
+  box-shadow: -1px 1px 2px #ffeac1;
+}
+
+.howls-moving-castle .about-howl {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.howls-moving-castle .about-howl .about-howl-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+.howls-moving-castle .about-howl .about-howl-flex .howl-contents .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.howls-moving-castle .about-howl .howl-contents button {
+  margin-left: 20px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.howls-moving-castle .about-howl p {
+  margin-top: 0;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.howls-moving-castle .about-howl h4 {
+  margin: 0 0 10px;
+}
+
+.howls-moving-castle .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 18%;
+}
+.howls-moving-castle .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+}
+
+.tales-from-earthsea header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/tales-from-earthsea-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/tales-from-earthsea-header.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+.tales-from-earthsea header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.tales-from-earthsea header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.tales-from-earthsea nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.tales-from-earthsea nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.tales-from-earthsea nav ul a {
+  color: white;
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tales-from-earthsea li a:hover,
+.tales-from-earthsea li a:focus {
+  border-bottom: 1px solid red;
+  -webkit-box-shadow: -1px 1px 2px red;
+  box-shadow: -1px 1px 2px red;
+}
+
+.tales-from-earthsea .about-tales {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.tales-from-earthsea .about-tales .about-tales-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+.tales-from-earthsea .about-tales .about-tales-flex .tales-contents .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.tales-from-earthsea .about-tales .tales-contents button {
+  margin-left: 20px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.tales-from-earthsea .about-tales p {
+  margin-top: 0;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.tales-from-earthsea .about-tales h4 {
+  margin: 0 0 10px;
+}
+
+.tales-from-earthsea .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 18%;
+}
+.tales-from-earthsea .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+}
+
+.ponyo header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/ponyo-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/ponyo-header.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+  position: relative;
+}
+.ponyo header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.ponyo header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.ponyo nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.ponyo nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.ponyo nav ul a {
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.ponyo li a:hover,
+.ponyo li a:focus {
+  border-bottom: 1px solid #0091ca;
+  -webkit-box-shadow: -1px 1px 2px #007e83;
+  box-shadow: -1px 1px 2px #007e83;
+}
+
+.ponyo .about-ponyo {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.ponyo .about-ponyo .about-ponyo-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+.ponyo .about-ponyo .about-ponyo-flex .ponyo-contents .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.ponyo .about-ponyo .ponyo-contents button {
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.ponyo .about-ponyo p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.ponyo .about-ponyo h4 {
+  margin: 0 0 10px;
+}
+
+.ponyo .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 18%;
+}
+.ponyo .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.the-secret-world-of-arrietty header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/the-secret-world-of-arrietty-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/the-secret-world-of-arrietty-header.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+  position: relative;
+}
+.the-secret-world-of-arrietty header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.the-secret-world-of-arrietty header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.the-secret-world-of-arrietty nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.the-secret-world-of-arrietty nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.the-secret-world-of-arrietty nav ul a {
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.the-secret-world-of-arrietty li a:hover,
+.the-secret-world-of-arrietty li a:focus {
+  border-bottom: 1px solid #00ca32;
+  -webkit-box-shadow: -1px 1px 2px #16c45f;
+  box-shadow: -1px 1px 2px #16c45f;
+}
+
+.the-secret-world-of-arrietty .about-arrietty {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.the-secret-world-of-arrietty .about-arrietty .about-arrietty-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+.the-secret-world-of-arrietty
+  .about-arrietty
+  .about-arrietty-flex
+  .arriety-contents
+  .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.the-secret-world-of-arrietty .about-arrietty .arriety-contents button {
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.the-secret-world-of-arrietty .about-arrietty p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.the-secret-world-of-arrietty .about-arrietty h4 {
+  margin: 0 0 10px;
+}
+
+.the-secret-world-of-arrietty .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 18%;
+}
+.the-secret-world-of-arrietty .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.from-up-on-poppy-hill header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/from-up-on-poppy-hill-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/from-up-on-poppy-hill-header.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+  position: relative;
+}
+.from-up-on-poppy-hill header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.from-up-on-poppy-hill header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.from-up-on-poppy-hill nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.from-up-on-poppy-hill nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.from-up-on-poppy-hill nav ul a {
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.from-up-on-poppy-hill li a:hover,
+.from-up-on-poppy-hill li a:focus {
+  border-bottom: 1px solid #11d2ec;
+  -webkit-box-shadow: -1px 1px 2px #11bae4;
+  box-shadow: -1px 1px 2px #11bae4;
+}
+
+.from-up-on-poppy-hill .about-poppyhill {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.from-up-on-poppy-hill .about-poppyhill .about-poppyhill-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+.from-up-on-poppy-hill
+  .about-poppyhill
+  .about-poppyhill-flex
+  .poppyhill-contents
+  .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.from-up-on-poppy-hill .about-poppyhill .poppyhill-contents button {
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.from-up-on-poppy-hill .about-poppyhill p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.from-up-on-poppy-hill .about-poppyhill h4 {
+  margin: 0 0 10px;
+}
+
+.from-up-on-poppy-hill .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 18%;
+}
+.from-up-on-poppy-hill .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.the-wind-rises header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/the-wind-rises-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/the-wind-rises-header.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+  position: relative;
+}
+.the-wind-rises header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.the-wind-rises header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.the-wind-rises nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.the-wind-rises nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.the-wind-rises nav ul a {
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.the-wind-rises li a:hover,
+.the-wind-rises li a:focus {
+  border-bottom: 1px solid #11d2ec;
+  -webkit-box-shadow: -1px 1px 2px #11bae4;
+  box-shadow: -1px 1px 2px #11bae4;
+}
+
+.the-wind-rises .about-wind {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.the-wind-rises .about-wind .about-wind-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+.the-wind-rises .about-wind .about-wind-flex .wind-contents .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.the-wind-rises .about-wind .wind-contents button {
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.the-wind-rises .about-wind p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.the-wind-rises .about-wind h4 {
+  margin: 0 0 10px;
+}
+
+.the-wind-rises .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 18%;
+}
+.the-wind-rises .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.the-tale-of-the-princess-kaguya header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/the-tale-of-the-princess-kaguya-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/the-tale-of-the-princess-kaguya-header.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+  position: relative;
+}
+.the-tale-of-the-princess-kaguya header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.the-tale-of-the-princess-kaguya header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.the-tale-of-the-princess-kaguya nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.the-tale-of-the-princess-kaguya nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.the-tale-of-the-princess-kaguya nav ul a {
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.the-tale-of-the-princess-kaguya li a:hover,
+.the-tale-of-the-princess-kaguya li a:focus {
+  border-bottom: 1px solid #c3cdce;
+  -webkit-box-shadow: -1px 1px 2px #b8c1c4;
+  box-shadow: -1px 1px 2px #b8c1c4;
+}
+
+.the-tale-of-the-princess-kaguya .about-kaguya {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.the-tale-of-the-princess-kaguya .about-kaguya .about-kaguya-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+.the-tale-of-the-princess-kaguya
+  .about-kaguya
+  .about-kaguya-flex
+  .kaguya-contents
+  .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.the-tale-of-the-princess-kaguya .about-kaguya .kaguya-contents button {
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.the-tale-of-the-princess-kaguya .about-kaguya p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.the-tale-of-the-princess-kaguya .about-kaguya h4 {
+  margin: 0 0 10px;
+}
+
+.the-tale-of-the-princess-kaguya .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 18%;
+}
+.the-tale-of-the-princess-kaguya .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.when-marine-was-there header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/When-Marnie-Was-There-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/When-Marnie-Was-There-header.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+  position: relative;
+}
+.when-marine-was-there header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.when-marine-was-there header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.when-marine-was-there nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.when-marine-was-there nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.when-marine-was-there nav ul a {
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.when-marine-was-there li a:hover,
+.when-marine-was-there li a:focus {
+  border-bottom: 1px solid #c3cdce;
+  -webkit-box-shadow: -1px 1px 2px #b8c1c4;
+  box-shadow: -1px 1px 2px #b8c1c4;
+}
+
+.when-marine-was-there .about-marine {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.when-marine-was-there .about-marine .about-marine-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+.when-marine-was-there
+  .about-marine
+  .about-marine-flex
+  .marine-contents
+  .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.when-marine-was-there .about-marine .marine-contents button {
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.when-marine-was-there .about-marine p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.when-marine-was-there .about-marine h4 {
+  margin: 0 0 10px;
+}
+
+.when-marine-was-there .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 18%;
+}
+.when-marine-was-there .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.the-red-turtle header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(11, 1, 1, 0.38)),
+      to(rgba(18, 8, 8, 0.085))
+    ),
+    url('../../images/header-images/the-red-turtle-header.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url('../../images/header-images/the-red-turtle-header.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: none;
+  height: 100vh;
+  position: relative;
+}
+.the-red-turtle header .header-logo div:nth-of-type(1) {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.the-red-turtle header .header-logo img {
+  width: 160px;
+  height: 80px;
+}
+
+.the-red-turtle nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+.the-red-turtle nav ul li {
+  padding: 0px 15px 5px 0px;
+}
+.the-red-turtle nav ul a {
+  font-size: 0.7rem;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  color: #eef7a5;
+  text-transform: uppercase;
+}
+
+.the-red-turtle li a:hover,
+.the-red-turtle li a:focus {
+  border-bottom: 1px solid #c3cdce;
+  -webkit-box-shadow: -1px 1px 2px #b8c1c4;
+  box-shadow: -1px 1px 2px #b8c1c4;
+}
+
+.the-red-turtle .about-turtle {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.the-red-turtle .about-turtle .about-turtle-flex {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+}
+.the-red-turtle .about-turtle .about-turtle-flex .turtle-contents .api-fetch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.the-red-turtle .about-turtle .turtle-contents button {
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 8px;
+}
+.the-red-turtle .about-turtle p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.the-red-turtle .about-turtle h4 {
+  margin: 0 0 10px;
+}
+
+.the-red-turtle .trailer-box {
+  position: absolute;
+  top: 0;
+  right: 18%;
+}
+.the-red-turtle .trailer-box .close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+}
+
 html {
   font-size: 125%;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 h1,
@@ -1431,7 +2488,7 @@ p {
 
 h1 {
   font-size: 3.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 75px;
@@ -1526,12 +2583,13 @@ p {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.gallery img:hover, .gallery img:focus {
+.gallery img:hover,
+.gallery img:focus {
   cursor: pointer;
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   -webkit-box-shadow: 8px 8px 8px #12a8ee;
-          box-shadow: 8px 8px 8px #12a8ee;
+  box-shadow: 8px 8px 8px #12a8ee;
 }
 
 .contact {
@@ -1548,7 +2606,7 @@ form {
   padding-top: 20px;
 }
 
-input[type=email] {
+input[type='email'] {
   padding: 6px;
   font-size: 0.7rem;
   width: 220px;
@@ -1575,8 +2633,8 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .social-link ul li {
   padding: 0px 10px;
@@ -1591,7 +2649,7 @@ i {
 i:hover,
 i:focus {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   cursor: pointer;
 }
 
@@ -1608,7 +2666,7 @@ footer a:hover,
 footer a:focus {
   display: inline-block;
   -webkit-transform: scale(2);
-          transform: scale(2);
+  transform: scale(2);
   color: aqua;
   background-color: black;
 }

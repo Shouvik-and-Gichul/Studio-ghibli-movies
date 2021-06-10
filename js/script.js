@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 const app = {};
-app.url = "https://ghibliapi.herokuapp.com/films";
+app.url = 'https://ghibliapi.herokuapp.com/films';
 
 // const variable = await fetch(app.url);
 // const otherVariable = await variable.json();
@@ -10,7 +10,7 @@ app.url = "https://ghibliapi.herokuapp.com/films";
 app.getContents = function () {
   fetch(app.url)
     .then(function (response) {
-      console.log(response)
+      console.log(response);
       return response.json();
     })
     .then(function (apiData) {
@@ -20,13 +20,13 @@ app.getContents = function () {
 };
 
 app.displayContents = function (data) {
-  const body = document.querySelector("body");
-  const apiFetch = document.querySelector(".api-fetch");
+  const body = document.querySelector('body');
+  const apiFetch = document.querySelector('.api-fetch');
   data.forEach(function (apiData, index) {
-    const h3Element = document.createElement("h3");
-    const h2Element = document.createElement("h2");
-    const pElementOne = document.createElement("p");
-    const pElementTwo = document.createElement("p");
+    const h3Element = document.createElement('h3');
+    const h2Element = document.createElement('h2');
+    const pElementOne = document.createElement('p');
+    const pElementTwo = document.createElement('p');
     const {
       director,
       title,
@@ -36,7 +36,7 @@ app.displayContents = function (data) {
       running_time,
       rt_score,
     } = apiData;
-    if (body.className === "castle-in-the-sky" && index === 0) {
+    if (body.className === 'castle-in-the-sky' && index === 0) {
       app.makeAndAppendElement(
         h3Element,
         h2Element,
@@ -45,7 +45,7 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
-    } else if (body.className === "grave-of-the-fireflies" && index === 1) {
+    } else if (body.className === 'grave-of-the-fireflies' && index === 1) {
       app.makeAndAppendElement(
         h3Element,
         h2Element,
@@ -54,8 +54,7 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
-    
-    } else if (body.className === "my-neighbor-totoro" && index === 2) {
+    } else if (body.className === 'my-neighbor-totoro' && index === 2) {
       app.makeAndAppendElement(
         h3Element,
         h2Element,
@@ -64,90 +63,175 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
-      } else if (body.className === "kiki-delivery-service" && index === 3) {
-        app.makeAndAppendElement(
-          h3Element,
-          h2Element,
-          pElementOne,
-          pElementTwo,
-          apiFetch,
-          apiData
-        );
-      } else if (body.className === "only-yesterday" && index === 4) {
-        app.makeAndAppendElement(
-          h3Element,
-          h2Element,
-          pElementOne,
-          pElementTwo,
-          apiFetch,
-          apiData
-        );
-      } else if (body.className === "porco-rosso" && index === 5) {
-        app.makeAndAppendElement(
-          h3Element,
-          h2Element,
-          pElementOne,
-          pElementTwo,
-          apiFetch,
-          apiData
-        );
-      } else if (body.className === "pom-poko" && index === 6) {
-        app.makeAndAppendElement(
-          h3Element,
-          h2Element,
-          pElementOne,
-          pElementTwo,
-          apiFetch,
-          apiData
-        );
-      } else if (body.className === "whisper-of-the-heart" && index === 7) {
-        app.makeAndAppendElement(
-          h3Element,
-          h2Element,
-          pElementOne,
-          pElementTwo,
-          apiFetch,
-          apiData
-        );
-      } else if (body.className === "princess-mononoke" && index === 8) {
-        app.makeAndAppendElement(
-          h3Element,
-          h2Element,
-          pElementOne,
-          pElementTwo,
-          apiFetch,
-          apiData
-        ); 
-      }
-        else if (body.className === "the-yamadas" && index === 9) {
-        app.makeAndAppendElement(
-          h3Element,
-          h2Element,
-          pElementOne,
-          pElementTwo,
-          apiFetch,
-          apiData
-        );
-        }
-       else if (body.className === "spirited-away" && index === 10) {
-        app.makeAndAppendElement(
-          h3Element,
-          h2Element,
-          pElementOne,
-          pElementTwo,
-          apiFetch,
-          apiData
-        );
-      } else if (body.className === "the-cat-returns" && index === 11) {
-        app.makeAndAppendElement(
-          h3Element,
-          h2Element,
-          pElementOne,
-          pElementTwo,
-          apiFetch,
-          apiData
-        );
-      }
+    } else if (body.className === 'kiki-delivery-service' && index === 3) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'only-yesterday' && index === 4) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'porco-rosso' && index === 5) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'pom-poko' && index === 6) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'whisper-of-the-heart' && index === 7) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'princess-mononoke' && index === 8) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'the-yamadas' && index === 9) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'spirited-away' && index === 10) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'the-cat-returns' && index === 11) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'howls-moving-castle' && index === 12) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'tales-from-earthsea' && index === 13) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'ponyo' && index === 14) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (
+      body.className === 'the-secret-world-of-arrietty' &&
+      index === 15
+    ) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'from-up-on-poppy-hill' && index === 16) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'the-wind-rises' && index === 17) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (
+      body.className === 'the-tale-of-the-princess-kaguya' &&
+      index === 18
+    ) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'when-marine-was-there' && index === 19) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    } else if (body.className === 'the-red-turtle' && index === 20) {
+      app.makeAndAppendElement(
+        h3Element,
+        h2Element,
+        pElementOne,
+        pElementTwo,
+        apiFetch,
+        apiData
+      );
+    }
   });
 };
 
@@ -178,19 +262,19 @@ app.makeAndAppendElement = function (h3, h2, p1, p2, apiFetch, getApiData) {
 };
 
 app.displayTrailer = function () {
-  const trailer = document.querySelector("#trailer");
-  trailer.addEventListener("click", function () {
-    document.querySelector(".trailer-box").classList.toggle("hidden");
+  const trailer = document.querySelector('#trailer');
+  trailer.addEventListener('click', function () {
+    document.querySelector('.trailer-box').classList.toggle('hidden');
   });
 };
 
 app.closeTrailer = function () {
-  const closeBtn = document.querySelector(".close");
-  closeBtn.addEventListener("click", function () {
-    document.querySelector(".trailer-box").classList.toggle("hidden");
-    const video = document.querySelector("iframe");
+  const closeBtn = document.querySelector('.close');
+  closeBtn.addEventListener('click', function () {
+    document.querySelector('.trailer-box').classList.toggle('hidden');
+    const video = document.querySelector('iframe');
     let source = video.src;
-    video.src = "";
+    video.src = '';
     video.src = source;
   });
 };
