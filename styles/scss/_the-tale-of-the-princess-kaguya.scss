@@ -1,9 +1,9 @@
-.the-cat-returns header {
+.the-tale-of-the-princess-kaguya header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
-    url('../../images/header-images/the-cat-returns-header.jpg');
+    url('../../images/header-images/the-tale-of-the-princess-kaguya-header.jpg');
   background-size: 100% 100%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: none;
   height: 100vh;
   position: relative;
   .header-logo div:nth-of-type(1) {
@@ -17,7 +17,7 @@
   }
 }
 
-.the-cat-returns nav ul {
+.the-tale-of-the-princess-kaguya nav ul {
   display: flex;
   margin: 0;
   padding: 25px 0;
@@ -25,52 +25,51 @@
     padding: 0px 15px 5px 0px;
   }
   a {
-    color: rgb(255, 255, 255);
     font-size: 0.7rem;
     font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid transparent;
     padding: 5px 3px;
     font-weight: bold;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
   }
 }
 
-.the-cat-returns li a:hover,
-.the-cat-returns li a:focus {
-  border-bottom: 1px solid rgb(252, 242, 218);
-  box-shadow: -1px 1px 2px rgb(255, 234, 193);
+.the-tale-of-the-princess-kaguya li a:hover,
+.the-tale-of-the-princess-kaguya li a:focus {
+  border-bottom: 1px solid rgb(195, 205, 206);
+  box-shadow: -1px 1px 2px rgb(184, 193, 196);
 }
 
-.the-cat-returns .about-cat {
+.the-tale-of-the-princess-kaguya .about-kaguya {
   padding: 60px 0px 40px;
   background-color: rgba(7, 7, 7, 0.941);
-  .about-cat-flex {
+  .about-kaguya-flex {
     position: relative;
-    // display: flex;
     display: grid;
     grid-template-columns: 1.5fr 2.5fr;
-    .cat-contents .api-fetch {
+    .kaguya-contents .api-fetch {
       display: flex;
       flex-direction: column;
-      margin-left: 20px;
+      margin-left: 30px;
     }
   }
-  .cat-contents button {
-    margin-left: 20px;
+  .kaguya-contents button {
+    margin-left: 30px;
     margin-top: 15px;
     padding: 8px;
   }
   p {
     margin-top: 0;
-    line-height: 25px;
     margin-bottom: 10px;
+    line-height: 25px;
   }
   h4 {
     margin: 0 0 10px;
   }
 }
 
-.the-cat-returns .trailer-box {
+.the-tale-of-the-princess-kaguya .trailer-box {
   position: absolute;
   top: 0;
   right: 18%;
@@ -79,7 +78,7 @@
     top: -50px;
     right: 0;
     font-size: 1rem;
-    background-color: transparent;
+    background: transparent;
     color: white;
   }
 }

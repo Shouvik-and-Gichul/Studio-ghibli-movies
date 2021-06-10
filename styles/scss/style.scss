@@ -1,17 +1,33 @@
-@import "setup";
-@import "header";
-@import "castle-in-the-sky";
-@import "grave-of-the-fireflies";
-@import "my-neighbor-totoro";
-@import "kiki-delivery-service";
-@import "only-yesterday";
-@import "porco-rosso";
-@import "pom-poko";
-@import "whisper-of-the-heart";
-@import "princess-mononoke";
-@import "the-yamadas";
-@import "spirited-away";
-@import "the-cat-returns";
+@import 'setup';
+@import 'header';
+@import 'castle-in-the-sky';
+@import 'grave-of-the-fireflies';
+@import 'my-neighbor-totoro';
+@import 'spirited-away';
+@import 'the-cat-returns';
+@import 'howls-moving-castle';
+@import 'tales-from-earthsea';
+@import 'ponyo';
+@import 'the-secret-world-of-arrietty';
+@import 'from-up-on-poppy-hill';
+@import 'the-wind-rises';
+@import 'the-tale-of-the-princess-kaguya';
+@import 'when-marine-was-there';
+@import 'the-red-turtle';
+@import 'setup';
+@import 'header';
+@import 'castle-in-the-sky';
+@import 'grave-of-the-fireflies';
+@import 'my-neighbor-totoro';
+@import 'kiki-delivery-service';
+@import 'only-yesterday';
+@import 'porco-rosso';
+@import 'pom-poko';
+@import 'whisper-of-the-heart';
+@import 'princess-mononoke';
+@import 'the-yamadas';
+@import 'spirited-away';
+@import 'the-cat-returns';
 
 // font-family: 'Lora', serif;
 
@@ -19,7 +35,7 @@
 
 html {
   font-size: 125%;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
 }
 
 h1,
@@ -32,7 +48,7 @@ p {
 
 h1 {
   font-size: 3.5rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 75px;
@@ -157,7 +173,7 @@ form {
   padding-top: 20px;
 }
 
-input[type="email"] {
+input[type='email'] {
   padding: 6px;
   font-size: 0.7rem;
   width: 220px;
