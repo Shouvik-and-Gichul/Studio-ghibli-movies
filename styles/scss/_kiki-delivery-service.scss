@@ -1,9 +1,9 @@
-.the-cat-returns header {
+.kiki-delivery-service header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
-    url('../../images/header-images/the-cat-returns-header.jpg');
+    url("../../images/header-images/kiki-header-3.jpg");
   background-size: 100% 100%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: none;
   height: 100vh;
   position: relative;
   .header-logo div:nth-of-type(1) {
@@ -17,7 +17,7 @@
   }
 }
 
-.the-cat-returns nav ul {
+.kiki-delivery-service nav ul {
   display: flex;
   margin: 0;
   padding: 25px 0;
@@ -25,9 +25,9 @@
     padding: 0px 15px 5px 0px;
   }
   a {
-    color: rgb(255, 255, 255);
+    color: rgb(252, 241, 187);
     font-size: 0.7rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     border-bottom: 1px solid transparent;
     padding: 5px 3px;
     font-weight: bold;
@@ -35,27 +35,27 @@
   }
 }
 
-.the-cat-returns li a:hover,
-.the-cat-returns li a:focus {
-  border-bottom: 1px solid rgb(252, 242, 218);
-  box-shadow: -1px 1px 2px rgb(255, 234, 193);
+.kiki-delivery-service li a:hover,
+.kiki-delivery-service li a:focus {
+  border-bottom: 1px solid rgb(75, 75, 75);
+  box-shadow: -1px 1px 2px rgb(149, 180, 191);
 }
 
-.the-cat-returns .about-cat {
+.kiki-delivery-service .about-kiki {
   padding: 60px 0px 40px;
   background-color: rgba(7, 7, 7, 0.941);
-  .about-cat-flex {
+  .about-kiki-flex {
     position: relative;
     // display: flex;
     display: grid;
     grid-template-columns: 1.5fr 2.5fr;
-    .cat-contents .api-fetch {
+    .kiki-contents .api-fetch {
       display: flex;
       flex-direction: column;
       margin-left: 20px;
     }
   }
-  .cat-contents button {
+  .kiki-contents button {
     margin-left: 20px;
     margin-top: 15px;
     padding: 8px;
@@ -70,16 +70,16 @@
   }
 }
 
-.the-cat-returns .trailer-box {
+.kiki-delivery-service .trailer-box {
   position: absolute;
   top: 0;
-  right: 15%;
+  right: 18%;
   .close {
     position: absolute;
     top: -50px;
     right: 0;
     font-size: 1rem;
-    background-color: transparent;
+    background: transparent;
     color: white;
   }
 }

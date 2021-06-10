@@ -6,9 +6,11 @@ app.url = "https://ghibliapi.herokuapp.com/films";
 app.getContents = function () {
   fetch(app.url)
     .then(function (response) {
+      console.log(response)
       return response.json();
     })
     .then(function (apiData) {
+      console.log(apiData);
       app.displayContents(apiData);
     });
 };
@@ -58,25 +60,90 @@ app.displayContents = function (data) {
         apiFetch,
         apiData
       );
-      } else if (body.className === "spirited-away" && index === 10) {
-      app.makeAndAppendElement(
-        h3Element,
-        h2Element,
-        pElementOne,
-        pElementTwo,
-        apiFetch,
-        apiData
-      );
-    } else if (body.className === "the-cat-returns" && index === 11) {
-      app.makeAndAppendElement(
-        h3Element,
-        h2Element,
-        pElementOne,
-        pElementTwo,
-        apiFetch,
-        apiData
-      );
-    }
+      } else if (body.className === "kiki-delivery-service" && index === 3) {
+        app.makeAndAppendElement(
+          h3Element,
+          h2Element,
+          pElementOne,
+          pElementTwo,
+          apiFetch,
+          apiData
+        );
+      } else if (body.className === "only-yesterday" && index === 4) {
+        app.makeAndAppendElement(
+          h3Element,
+          h2Element,
+          pElementOne,
+          pElementTwo,
+          apiFetch,
+          apiData
+        );
+      } else if (body.className === "porco-rosso" && index === 5) {
+        app.makeAndAppendElement(
+          h3Element,
+          h2Element,
+          pElementOne,
+          pElementTwo,
+          apiFetch,
+          apiData
+        );
+      } else if (body.className === "pom-poko" && index === 6) {
+        app.makeAndAppendElement(
+          h3Element,
+          h2Element,
+          pElementOne,
+          pElementTwo,
+          apiFetch,
+          apiData
+        );
+      } else if (body.className === "whisper-of-the-heart" && index === 7) {
+        app.makeAndAppendElement(
+          h3Element,
+          h2Element,
+          pElementOne,
+          pElementTwo,
+          apiFetch,
+          apiData
+        );
+      } else if (body.className === "princess-mononoke" && index === 8) {
+        app.makeAndAppendElement(
+          h3Element,
+          h2Element,
+          pElementOne,
+          pElementTwo,
+          apiFetch,
+          apiData
+        ); 
+      }
+        else if (body.className === "the-yamadas" && index === 9) {
+        app.makeAndAppendElement(
+          h3Element,
+          h2Element,
+          pElementOne,
+          pElementTwo,
+          apiFetch,
+          apiData
+        );
+        }
+       else if (body.className === "spirited-away" && index === 10) {
+        app.makeAndAppendElement(
+          h3Element,
+          h2Element,
+          pElementOne,
+          pElementTwo,
+          apiFetch,
+          apiData
+        );
+      } else if (body.className === "the-cat-returns" && index === 11) {
+        app.makeAndAppendElement(
+          h3Element,
+          h2Element,
+          pElementOne,
+          pElementTwo,
+          apiFetch,
+          apiData
+        );
+      }
   });
 };
 
