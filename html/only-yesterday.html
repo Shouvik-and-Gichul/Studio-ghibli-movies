@@ -10,39 +10,43 @@
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>From Up On Poppy Hill</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Castle in the sky</title>
   </head>
-  <body class="from-up-on-poppy-hill">
+  <body class="only-yesterday">
     <header>
       <div class="wrapper">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#movie-collection">The Movies</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#movie-collection">The Movies</a></li>
           </ul>
         </nav>
       </div>
       <div class="header-logo wrapper">
         <div>
+          <!-- <p>Brought to you by:</p> -->
           <a href="https://www.ghibli.jp/" target="_blank"
             ><img
-              src="./images/ghibli_logo_white-1.png"
+              src="../images/ghibli_logo_white-1.png"
               alt="Studio ghibli logo image"
             />
           </a>
         </div>
-        <div>
+        <div></div>
       </div>
     </header>
 
     <main>
-      <section class="about-poppyhill">
-        <div class="about-poppyhill-flex wrapper">
+      <section class="about-yesterday">
+        <div class="about-yesterday-flex wrapper">
           <div>
-            <img src="./images/From Up on Poppy Hills.jpg" alt="From Up On Poppy Hill poster" />
+            <img
+              src="../images/Only Yesterday.jpg"
+              alt="Only yesterday movie poster"
+            />
           </div>
-          <div class="poppyhill-contents">
+          <div class="yesterday-contents">
             <div>
               <div class="api-fetch">
                 <!-- api content goes here -->
@@ -53,11 +57,12 @@
                   <button class="close">&times;</button>
                   <iframe
                     id="youTubeVideo"
-                    title="From Up On Poppy Hill"
-                    src="https://www.youtube.com/embed/9-rhgSCAqDU?&enablejsapi=1"
+                    title="Only Yesterday"
+                    src="https://www.youtube.com/embed/x0ZrjocXVJ4?&enablejsapi=1"
                     width="500"
                     height="300"
                     frameborder="0"
+                    allowfullscreen
                   ></iframe>
                 </div>
               </div>
@@ -76,8 +81,9 @@
         2021
       </p>
     </footer>
+    <div class="overlay hidden"></div>
 
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

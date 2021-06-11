@@ -10,44 +10,43 @@
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Tales from EarthSea</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Grave of the pom</title>
   </head>
-  <body class="tales-from-earthsea">
+  <body class="pom-poko">
     <header>
       <div class="wrapper">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#movie-collection">The Movies</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#movie-collection">The Movies</a></li>
           </ul>
         </nav>
       </div>
       <div class="header-logo wrapper">
         <div>
-          <a href="https://www.ghibli.jp/" blank_
+          <!-- <p>Brought to you by:</p> -->
+          <a href="https://www.ghibli.jp/" target="_blank"
             ><img
-              src="./images/ghibli_logo_white-1.png"
+              src="../images/ghibli_logo_white-1.png"
               alt="Studio ghibli logo image"
             />
           </a>
         </div>
+        <div></div>
       </div>
     </header>
 
     <main>
-      <section class="about-tales">
-        <div class="about-tales-flex wrapper">
+      <section class="about-pom">
+        <div class="about-pom-flex wrapper">
           <div>
-            <img
-              src="./images/Tales from Earth sea.jpg"
-              alt="Howl's Moving Castle poster"
-            />
+            <img src="../images/Pom-poko.jpg" alt="Pom poko movie poster" />
           </div>
-          <div class="tales-contents">
+          <div class="pom-contents">
             <div>
               <div class="api-fetch">
-                <!-- api contents goes here -->
+                <!-- api content goes here -->
               </div>
               <div class="trailer-section">
                 <button id="trailer">Watch Trailer</button>
@@ -55,11 +54,12 @@
                   <button class="close">&times;</button>
                   <iframe
                     id="youTubeVideo"
-                    title="Howl's Moving Castle"
-                    src="https://www.youtube.com/embed/5igcvnS9Hho?&enablejsapi=1"
+                    title="Grave of the pom"
+                    src="https://www.youtube.com/embed/_7cowIHjCD4?&enablejsapi=1"
                     width="500"
                     height="300"
                     frameborder="0"
+                    allowfullscreen
                   ></iframe>
                 </div>
               </div>
@@ -78,8 +78,9 @@
         2021
       </p>
     </footer>
+    <div class="overlay hidden"></div>
 
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

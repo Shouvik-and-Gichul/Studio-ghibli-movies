@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Cat Returns</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Grave of the fireflies</title>
   </head>
-  <body class="the-cat-returns">
+  <body class="grave-of-the-fireflies">
     <header>
       <div class="wrapper">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#movie-collection">The Movies</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#movie-collection">The Movies</a></li>
           </ul>
         </nav>
       </div>
@@ -28,24 +28,25 @@
           <!-- <p>Brought to you by:</p> -->
           <a href="https://www.ghibli.jp/" target="_blank"
             ><img
-              src="./images/ghibli_logo_white-1.png"
+              src="../images/ghibli_logo_white-1.png"
               alt="Studio ghibli logo image"
             />
           </a>
         </div>
+        <div></div>
       </div>
     </header>
 
     <main>
-      <section class="about-cat">
-        <div class="about-cat-flex wrapper">
+      <section class="about-fireflies">
+        <div class="about-fireflies-flex wrapper">
           <div>
             <img
-              src="./images/The Cat Returns.jpg"
-              alt="The Cat Returns poster"
+              src="../images/Grave of the fireflies.jpg"
+              alt="Grave of the fireflies poster"
             />
           </div>
-          <div class="cat-contents">
+          <div class="fireflies-contents">
             <div>
               <div class="api-fetch">
                 <!-- api content goes here -->
@@ -56,12 +57,12 @@
                   <button class="close">&times;</button>
                   <iframe
                     id="youTubeVideo"
-                    allowfullscreen="1"
-                    title="The Cat Returns"
-                    src="https://www.youtube.com/embed/CPL1jAx2uUU?&enablejsapi=1"
+                    title="Grave of the fireflies"
+                    src="https://www.youtube.com/embed/yYq0yRWSYqk?&enablejsapi=1"
                     width="500"
                     height="300"
                     frameborder="0"
+                    allowfullscreen
                   ></iframe>
                 </div>
               </div>
@@ -80,8 +81,9 @@
         2021
       </p>
     </footer>
+    <div class="overlay hidden"></div>
 
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

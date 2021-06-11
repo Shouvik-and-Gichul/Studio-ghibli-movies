@@ -1,6 +1,10 @@
+.castle-in-the-sky {
+  position: relative;
+}
+
 .castle-in-the-sky header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
-    url("../../images/header-images/castle-in-the-sky.jpg");
+    url('../../images/header-images/castle-in-the-sky.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -26,7 +30,7 @@
   }
   a {
     font-size: 0.7rem;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid transparent;
     padding: 5px 3px;
     font-weight: bold;
@@ -74,8 +78,8 @@
 .castle-in-the-sky .trailer-box {
   position: absolute;
   top: 0;
-  // left: 0;
   right: 18%;
+  z-index: 20;
   .close {
     position: absolute;
     top: -50px;

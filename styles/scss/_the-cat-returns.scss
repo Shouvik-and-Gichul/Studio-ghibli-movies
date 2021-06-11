@@ -1,3 +1,7 @@
+.the-cat-returns {
+  position: relative;
+}
+
 .the-cat-returns header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
     url('../../images/header-images/the-cat-returns-header.jpg');
@@ -74,6 +78,7 @@
   position: absolute;
   top: 0;
   right: 18%;
+  z-index: 20;
   .close {
     position: absolute;
     top: -50px;

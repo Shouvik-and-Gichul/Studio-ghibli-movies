@@ -10,25 +10,30 @@
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Spirited Away</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>The Tale of the Princess Kaguya</title>
   </head>
-  <body class="spirited-away">
+  <body class="the-tale-of-the-princess-kaguya">
     <header>
       <div class="wrapper">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#movie-collection">The Movies</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#movie-collection">The Movies</a></li>
           </ul>
         </nav>
       </div>
       <div class="header-logo wrapper">
         <div>
-          <!-- <p>Brought to you by:</p> -->
           <a href="https://www.ghibli.jp/" target="_blank"
             ><img
-              src="./images/ghibli_logo_white-1.png"
+              src="../images/ghibli_logo_white-1.png"
               alt="Studio ghibli logo image"
             />
           </a>
@@ -36,14 +41,14 @@
         <div>
       </div>
     </header>
-
+  
     <main>
-      <section class="about-spirited">
-        <div class="about-spirited-flex wrapper">
+      <section class="about-kaguya">
+        <div class="about-kaguya-flex wrapper">
           <div>
-            <img src="./images/Spirited away.jpg" alt="Spirited Away poster" />
+            <img src="../images/The Tale of the Princess Kaguya.jpg" alt="The Tale of the Princess Kaguya poster" />
           </div>
-          <div class="spirited-contents">
+          <div class="kaguya-contents">
             <div>
               <div class="api-fetch">
                 <!-- api content goes here -->
@@ -54,12 +59,12 @@
                   <button class="close">&times;</button>
                   <iframe
                     id="youTubeVideo"
-                    allowfullscreen="1"
-                    title="Spirited Away"
-                    src="https://www.youtube.com/embed/AZL_zEeLg8o?&enablejsapi=1"
+                    title="The Tale of the Princess Kaguya"
+                    src="https://www.youtube.com/embed/c3Se53lqGRM?&enablejsapi=1"
                     width="500"
                     height="300"
                     frameborder="0"
+                    allowfullscreen
                   ></iframe>
                 </div>
               </div>
@@ -68,7 +73,7 @@
         </div>
       </section>
     </main>
-
+  
     <footer>
       <p>
         Copyright &copy
@@ -78,8 +83,9 @@
         2021
       </p>
     </footer>
-
+    <div class="overlay hidden"></div>
+  
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

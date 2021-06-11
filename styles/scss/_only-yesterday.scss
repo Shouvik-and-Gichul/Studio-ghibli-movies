@@ -1,6 +1,10 @@
+.only-yesterday {
+  position: relative;
+}
+
 .only-yesterday header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
-    url("../../images/header-images/yesterday-header.jpg");
+    url('../../images/header-images/yesterday-header.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -27,7 +31,7 @@
   a {
     color: rgb(255, 255, 255);
     font-size: 0.7rem;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-bottom: 1px solid transparent;
     padding: 5px 3px;
     font-weight: bold;
@@ -75,6 +79,7 @@
   position: absolute;
   top: 0;
   right: 18%;
+  z-index: 20;
   .close {
     position: absolute;
     top: -50px;

@@ -1,3 +1,7 @@
+.the-tale-of-the-princess-kaguya {
+  position: relative;
+}
+
 .the-tale-of-the-princess-kaguya header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
     url('../../images/header-images/the-tale-of-the-princess-kaguya-header.jpg');
@@ -73,6 +77,7 @@
   position: absolute;
   top: 0;
   right: 18%;
+  z-index: 20;
   .close {
     position: absolute;
     top: -50px;
