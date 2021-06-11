@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>My neighbor Totoro</title>
   </head>
   <body class="my-neighbor-totoro">
@@ -18,8 +18,8 @@
       <div class="wrapper">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#movie-collection">The Movies</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#movie-collection">The Movies</a></li>
           </ul>
         </nav>
       </div>
@@ -28,7 +28,7 @@
           <!-- <p>Brought to you by:</p> -->
           <a href="https://www.ghibli.jp/" blank_
             ><img
-              src="./images/ghibli_logo_white-1.png"
+              src="../images/ghibli_logo_white-1.png"
               alt="Studio ghibli logo image"
             />
           </a>
@@ -42,9 +42,8 @@
       <section class="about-totoro">
         <div class="about-totoro-flex wrapper">
           <div>
-            <img src="./images/My Neighbor Totoro.jpg" alt="My neighbor Totoro movie poster" />
             <img
-              src="./images/My Neighbor Totoro.jpg"
+              src="../images/My Neighbor Totoro.jpg"
               alt="My neighbor Totoro movie poster"
             />
           </div>
@@ -59,13 +58,12 @@
                   <button class="close">&times;</button>
                   <iframe
                     id="youTubeVideo"
-                    allowfullscreen="1"
-                    autoplay="1"
                     title="My neighbor Totoro"
                     src="https://www.youtube.com/embed/92a7Hj0ijLs?&enablejsapi=1"
                     width="500"
                     height="300"
                     frameborder="0"
+                    allowfullscreen
                   ></iframe>
                 </div>
               </div>
@@ -76,11 +74,6 @@
     </main>
 
     <footer>
-      <p>Copyright &copy 
-        <a href="https://www.gichul-j.com/"target='_blank'>Gichul</a>  
-        & 
-        <a href="https://www.royshouvik.com/"target='_blank'>Shouvik</a>, 
-        Juno, 2021</p>
       <p>
         Copyright &copy
         <a href="https://www.gichul-j.com/" target="_blank">Gichul</a>
@@ -89,8 +82,9 @@
         2021
       </p>
     </footer>
+    <div class="overlay hidden"></div>
 
     <script src="https://www.youtube.com/iframe_api"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

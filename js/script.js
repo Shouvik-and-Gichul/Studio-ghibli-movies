@@ -265,6 +265,7 @@ app.displayTrailer = function () {
   const trailer = document.querySelector('#trailer');
   trailer.addEventListener('click', function () {
     document.querySelector('.trailer-box').classList.toggle('hidden');
+    document.querySelector('.overlay').classList.remove('hidden');
   });
 };
 
@@ -272,10 +273,19 @@ app.closeTrailer = function () {
   const closeBtn = document.querySelector('.close');
   closeBtn.addEventListener('click', function () {
     document.querySelector('.trailer-box').classList.toggle('hidden');
+    document.querySelector('.overlay').classList.add('hidden');
     const video = document.querySelector('iframe');
     let source = video.src;
     video.src = '';
     video.src = source;
+  });
+};
+
+app.closeTrailerByWindow = function () {
+  const overlay = document.querySelector('.overlay');
+  overlay.addEventListener('click', function () {
+    overlay.classList.add('hidden');
+    document.querySelector('.trailer-box').classList.add('hidden');
   });
 };
 
@@ -284,6 +294,7 @@ app.init = function () {
 
   app.displayTrailer();
   app.closeTrailer();
+  app.closeTrailerByWindow();
 };
 
 app.init();
