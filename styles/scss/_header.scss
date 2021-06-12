@@ -1,9 +1,9 @@
 header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
-    url("../../images/header-images/Hero-image\ 1.jpg");
+    url('../../images/header-images/Hero-image\ 1.jpg');
   background-size: 100% 100%;
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -22,10 +22,6 @@ header {
   height: 80px;
 }
 
-// .castle-in-the-sky {
-//   position: relative;
-// }
-
 // Page: Castle in the sky:
 
 .castle-in-the-sky {
@@ -35,12 +31,11 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/castle-in-the-sky.jpg");
+      url('../../images/header-images/castle-in-the-sky.jpg');
   }
 }
 
 // ----------------------------------
-
 // Page: Grave of the fireflies:
 
 .grave-of-the-fireflies {
@@ -50,7 +45,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/fireflies-header-2.jpg");
+      url('../../images/header-images/fireflies-header-2.jpg');
   }
 }
 
@@ -71,7 +66,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/totoro-header-5.jpg");
+      url('../../images/header-images/totoro-header-5.jpg');
   }
 }
 
@@ -92,14 +87,8 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/spirited-away-header.jpg");
+      url('../../images/header-images/spirited-away-header.jpg');
   }
-}
-
-.spirited-away li a:hover,
-.spirited-away li a:focus {
-  border-bottom: 1px solid rgb(252, 242, 218);
-  box-shadow: -1px 1px 2px rgb(255, 234, 193);
 }
 
 .spirited-away li a:hover,
@@ -117,7 +106,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/the-cat-returns-header.jpg");
+      url('../../images/header-images/the-cat-returns-header.jpg');
   }
 }
 
@@ -136,7 +125,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/howls-moving-castle-header.jpg");
+      url('../../images/header-images/howls-moving-castle-header.jpg');
   }
 }
 
@@ -157,7 +146,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/tales-from-earthsea-header.jpg");
+      url('../../images/header-images/tales-from-earthsea-header.jpg');
   }
 }
 
@@ -178,7 +167,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/ponyo-header.jpg");
+      url('../../images/header-images/ponyo-header.jpg');
   }
 }
 
@@ -199,7 +188,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/the-secret-world-of-arrietty-header.jpg");
+      url('../../images/header-images/the-secret-world-of-arrietty-header.jpg');
   }
 }
 
@@ -220,7 +209,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/from-up-on-poppy-hill-header.jpg");
+      url('../../images/header-images/from-up-on-poppy-hill-header.jpg');
   }
 }
 
@@ -241,7 +230,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/the-wind-rises-header.jpg");
+      url('../../images/header-images/the-wind-rises-header.jpg');
   }
 }
 
@@ -262,7 +251,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/the-tale-of-the-princess-kaguya-header.jpg");
+      url('../../images/header-images/the-tale-of-the-princess-kaguya-header.jpg');
   }
 }
 
@@ -283,7 +272,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/When-Marnie-Was-There-header.jpg");
+      url('../../images/header-images/When-Marnie-Was-There-header.jpg');
   }
 }
 
@@ -304,7 +293,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/the-red-turtle-header.jpg");
+      url('../../images/header-images/the-red-turtle-header.jpg');
   }
 }
 
@@ -325,7 +314,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/kiki-header-3.jpg");
+      url('../../images/header-images/kiki-header-3.jpg');
   }
 }
 
@@ -346,7 +335,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/yesterday-header.jpg");
+      url('../../images/header-images/yesterday-header.jpg');
   }
 }
 
@@ -367,7 +356,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/porco-header.jpg");
+      url('../../images/header-images/porco-header.jpg');
   }
 }
 
@@ -388,7 +377,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/pom-poko-header.jpg");
+      url('../../images/header-images/pom-poko-header.jpg');
   }
 }
 
@@ -409,7 +398,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/mononoke-header.jpg");
+      url('../../images/header-images/mononoke-header.jpg');
   }
 }
 
@@ -430,7 +419,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/the-yamadas-header.jpg");
+      url('../../images/header-images/the-yamadas-header.jpg');
   }
 }
 
@@ -451,7 +440,7 @@ header {
         rgba(11, 1, 1, 0.38),
         rgba(18, 8, 8, 0.085)
       ),
-      url("../../images/header-images/whisper-of-the-heart-header.jpg");
+      url('../../images/header-images/whisper-of-the-heart-header.jpg');
   }
 }
 
@@ -460,5 +449,3 @@ header {
   border-bottom: 1px solid rgb(98, 98, 84);
   box-shadow: -1px 1px 2px rgb(25, 33, 15);
 }
-
-

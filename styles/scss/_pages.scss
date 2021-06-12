@@ -6,7 +6,7 @@ nav ul {
 
 a {
   font-size: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 1px solid transparent;
   padding: 5px 3px;
   font-weight: bold;
@@ -31,10 +31,6 @@ li a:focus {
 .about {
   padding: 60px 0px 40px;
   background-color: rgba(7, 7, 7, 0.941);
-  // position: relative;
-
-  // display: grid;
-  // grid-template-columns: 1.5fr 2.5fr;
 }
 
 .contents {
@@ -49,10 +45,16 @@ li a:focus {
 
 .about-flex {
   position: relative;
-  //   display: flex;
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
-
+  grid-template-rows: 1fr;
+  grid-template-areas: 'img contents';
+  img {
+    grid-area: img;
+  }
+  .contents {
+    grid-area: contents;
+  }
   .contents button {
     // margin-left: 30px;
     margin-top: 15px;
@@ -73,9 +75,6 @@ li a:focus {
   position: absolute;
   top: 0;
   right: 25%;
-  // right: 0;
-  // left: 0;
-  // bottom: 0;
   z-index: 20;
   .close {
     position: absolute;
