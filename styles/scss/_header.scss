@@ -1,9 +1,6 @@
 header {
-  background-image: linear-gradient(
-      rgba(11, 1, 1, 0.38),
-      rgba(18, 8, 8, 0.085)
-    ),
-    url('../../images/header-images/Hero-image\ 1.jpg');
+  background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)),
+    url("../../images/header-images/Hero-image\ 1.jpg");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: none;
@@ -25,8 +22,443 @@ header {
   height: 80px;
 }
 
-// .header-logo p {
-//   color: white;
-//   font-size: 0.8rem;
+// .castle-in-the-sky {
+//   position: relative;
 // }
+
+// Page: Castle in the sky:
+
+.castle-in-the-sky {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/castle-in-the-sky.jpg");
+  }
+}
+
+// ----------------------------------
+
+// Page: Grave of the fireflies:
+
+.grave-of-the-fireflies {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/fireflies-header-2.jpg");
+  }
+}
+
+.grave-of-the-fireflies ul li a:hover,
+.grave-of-the-fireflies ul li a:focus {
+  border-bottom: 1px solid rgb(144, 138, 125);
+  box-shadow: -1px 1px 2px rgb(106, 72, 3);
+}
+
+// ----------------------------------
+
+// My neighbor Totoro:
+
+.my-neighbor-totoro {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/totoro-header-5.jpg");
+  }
+}
+
+.my-neighbor-totoro li a:hover,
+.my-neighbor-totoro li a:focus {
+  border-bottom: 1px solid rgb(65, 55, 35);
+  box-shadow: -1px 1px 2px rgb(48, 77, 18);
+}
+
+// ---------------------------
+
+// Page: Spirited Away
+
+.spirited-away {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/spirited-away-header.jpg");
+  }
+}
+
+.spirited-away li a:hover,
+.spirited-away li a:focus {
+  border-bottom: 1px solid rgb(252, 242, 218);
+  box-shadow: -1px 1px 2px rgb(255, 234, 193);
+}
+
+.spirited-away li a:hover,
+.spirited-away li a:focus {
+  border-bottom: 1px solid rgb(252, 242, 218);
+  box-shadow: -1px 1px 2px rgb(255, 234, 193);
+}
+
+// Page: The cat returns:
+
+.the-cat-returns {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/the-cat-returns-header.jpg");
+  }
+}
+
+.the-cat-returns li a:hover,
+.the-cat-returns li a:focus {
+  border-bottom: 1px solid rgb(252, 242, 218);
+  box-shadow: -1px 1px 2px rgb(255, 234, 193);
+}
+
+// Page: Howl's moving castle:
+
+.howls-moving-castle {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/howls-moving-castle-header.jpg");
+  }
+}
+
+.howls-moving-castle li a:hover,
+.howls-moving-castle li a:focus {
+  border-bottom: 1px solid rgb(252, 242, 218);
+  box-shadow: -1px 1px 2px rgb(255, 234, 193);
+}
+
+// -----------------
+
+// Page: Tales of earthsea:
+
+.tales-from-earthsea {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/tales-from-earthsea-header.jpg");
+  }
+}
+
+.tales-from-earthsea li a:hover,
+.tales-from-earthsea li a:focus {
+  border-bottom: 1px solid rgb(255, 0, 0);
+  box-shadow: -1px 1px 2px rgb(255, 0, 0);
+}
+
+// -------------------
+
+// Page: Ponyo
+
+.ponyo {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/ponyo-header.jpg");
+  }
+}
+
+.ponyo li a:hover,
+.ponyo li a:focus {
+  border-bottom: 1px solid rgb(0, 145, 202);
+  box-shadow: -1px 1px 2px rgb(0, 126, 131);
+}
+
+// -------------------
+
+// Page: The secret world of Arreity
+
+.the-secret-world-of-arrietty {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/the-secret-world-of-arrietty-header.jpg");
+  }
+}
+
+.the-secret-world-of-arrietty li a:hover,
+.the-secret-world-of-arrietty li a:focus {
+  border-bottom: 1px solid rgb(0, 202, 50);
+  box-shadow: -1px 1px 2px rgb(22, 196, 95);
+}
+
+// -------------
+
+// Page: From up on poppy hills:
+
+.from-up-on-poppy-hill {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/from-up-on-poppy-hill-header.jpg");
+  }
+}
+
+.from-up-on-poppy-hill li a:hover,
+.from-up-on-poppy-hill li a:focus {
+  border-bottom: 1px solid rgb(17, 210, 236);
+  box-shadow: -1px 1px 2px rgb(17, 186, 228);
+}
+
+// ---------------
+
+// Page: The wind rises:
+
+.the-wind-rises {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/the-wind-rises-header.jpg");
+  }
+}
+
+.the-wind-rises li a:hover,
+.the-wind-rises li a:focus {
+  border-bottom: 1px solid rgb(17, 210, 236);
+  box-shadow: -1px 1px 2px rgb(17, 186, 228);
+}
+
+// ------------
+
+// Page: The tale of Princess Kaguya:
+
+.the-tale-of-the-princess-kaguya {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/the-tale-of-the-princess-kaguya-header.jpg");
+  }
+}
+
+.the-tale-of-the-princess-kaguya li a:hover,
+.the-tale-of-the-princess-kaguya li a:focus {
+  border-bottom: 1px solid rgb(195, 205, 206);
+  box-shadow: -1px 1px 2px rgb(184, 193, 196);
+}
+
+// --------------
+
+// Page: When Marine was there:
+
+.when-marine-was-there {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/When-Marnie-Was-There-header.jpg");
+  }
+}
+
+.when-marine-was-there li a:hover,
+.when-marine-was-there li a:focus {
+  border-bottom: 1px solid rgb(195, 205, 206);
+  box-shadow: -1px 1px 2px rgb(184, 193, 196);
+}
+
+// ----------------
+
+// Pages: The red turtle:
+
+.the-red-turtle {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/the-red-turtle-header.jpg");
+  }
+}
+
+.the-red-turtle li a:hover,
+.the-red-turtle li a:focus {
+  border-bottom: 1px solid rgb(195, 205, 206);
+  box-shadow: -1px 1px 2px rgb(184, 193, 196);
+}
+
+// -----------------
+
+// Pages: Kiki's delivery service:
+
+.kiki-delivery-service {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/kiki-header-3.jpg");
+  }
+}
+
+.kiki-delivery-service li a:hover,
+.kiki-delivery-service li a:focus {
+  border-bottom: 1px solid rgb(75, 75, 75);
+  box-shadow: -1px 1px 2px rgb(149, 180, 191);
+}
+
+// ---------------------
+
+// Page: Only yesterday:
+
+.only-yesterday {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/yesterday-header.jpg");
+  }
+}
+
+.only-yesterday li a:hover,
+.only-yesterday li a:focus {
+  border-bottom: 1px solid rgb(116, 100, 61);
+  box-shadow: -1px 1px 2px rgb(84, 109, 114);
+}
+
+// -----------------
+
+// Page: Porco Rosso
+
+.porco-rosso {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/porco-header.jpg");
+  }
+}
+
+.porco-rosso li a:hover,
+.porco-rosso li a:focus {
+  border-bottom: 1px solid rgb(116, 100, 61);
+  box-shadow: -1px 1px 2px rgb(84, 109, 114);
+}
+
+// -----------------
+
+// Page: Pom poko:
+
+.pom-poko {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/pom-poko-header.jpg");
+  }
+}
+
+.pom-poko li a:hover,
+.pom-poko li a:focus {
+  border-bottom: 1px solid rgb(172, 172, 83);
+  box-shadow: -1px 1px 2px rgb(25, 33, 15);
+}
+
+// ---------------
+
+// Page: Princess Mononoke:
+
+.princess-mononoke {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/mononoke-header.jpg");
+  }
+}
+
+.princess-mononoke li a:hover,
+.princess-mononoke li a:focus {
+  border-bottom: 1px solid rgb(75, 75, 75);
+  box-shadow: -1px 1px 2px rgb(149, 180, 191);
+}
+
+// ------------------
+
+// Page: The Yamadas:
+
+.the-yamadas {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/the-yamadas-header.jpg");
+  }
+}
+
+.the-yamadas li a:hover,
+.the-yamadas li a:focus {
+  border-bottom: 1px solid rgb(47, 43, 43);
+  box-shadow: -1px 1px 2px rgb(108, 99, 81);
+}
+
+// ---------------------
+
+// Page: Whisper of the heart:
+
+.whisper-of-the-heart {
+  position: relative;
+  header {
+    background-image: linear-gradient(
+        rgba(11, 1, 1, 0.38),
+        rgba(18, 8, 8, 0.085)
+      ),
+      url("../../images/header-images/whisper-of-the-heart-header.jpg");
+  }
+}
+
+.whisper-of-the-heart li a:hover,
+.whisper-of-the-heart li a:focus {
+  border-bottom: 1px solid rgb(98, 98, 84);
+  box-shadow: -1px 1px 2px rgb(25, 33, 15);
+}
+
 
