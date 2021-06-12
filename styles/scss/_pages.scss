@@ -1,0 +1,88 @@
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 25px 0;
+}
+
+a {
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid transparent;
+  padding: 5px 3px;
+  font-weight: bold;
+  color: rgb(244, 244, 244);
+  text-transform: uppercase;
+}
+
+li {
+  padding: 0px 15px 5px 0px;
+}
+
+li a:hover,
+li a:focus {
+  border-bottom: 1px solid rgb(45, 40, 27);
+  box-shadow: -1px 1px 2px rgb(33, 29, 21);
+}
+
+#body {
+  position: relative;
+}
+
+.about {
+  padding: 60px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+  // position: relative;
+
+  // display: grid;
+  // grid-template-columns: 1.5fr 2.5fr;
+}
+
+.contents {
+  margin-left: 30px;
+}
+
+.api-fetch {
+  display: flex;
+  flex-direction: column;
+  // margin-left: 30px;
+}
+
+.about-flex {
+  position: relative;
+  //   display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr;
+
+  .contents button {
+    // margin-left: 30px;
+    margin-top: 15px;
+    padding: 8px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    line-height: 25px;
+  }
+  h4 {
+    margin: 0 0 10px;
+  }
+}
+
+.trailer-box {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  // right: 0;
+  // left: 0;
+  // bottom: 0;
+  z-index: 20;
+  .close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-size: 1rem;
+    background: transparent;
+    color: white;
+  }
+}
