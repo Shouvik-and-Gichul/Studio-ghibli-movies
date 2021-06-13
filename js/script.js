@@ -7,19 +7,17 @@ app.url = 'https://ghibliapi.herokuapp.com/films';
 // const otherVariable = await variable.json();
 // return otherVariable;
 
-app.getContents = function () {
-  fetch(app.url)
-    .then(function (response) {
+ app.getContents = async function () {
+  const response = await fetch(app.url)
+    
       if (response.ok) {
-        return response.json();
+        const jsonData = await response.json();
+        return jsonData;
       } else {
         throw new Error('API is not available at this moment');
       }
-    })
-    .then(function (apiData) {
-      app.displayContents(apiData);
-    });
-};
+  }
+
 
 app.displayContents = function (data) {
   const body = document.querySelector('body');
@@ -303,7 +301,14 @@ app.viewFilms = function () {
 };
 
 app.init = function () {
-  app.getContents();
+  app
+    .getContents()
+    .then(function (apiData) {
+      app.displayContents(apiData);
+    })
+    .catch(function (error) {
+      alert(error);
+    });
   app.displayTrailer();
   app.closeTrailer();
   app.closeTrailerByWindow();
