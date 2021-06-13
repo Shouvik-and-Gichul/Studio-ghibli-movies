@@ -284,6 +284,10 @@ app.closeTrailerByWindow = function () {
   overlay.addEventListener('click', function () {
     overlay.classList.add('hidden');
     document.querySelector('.trailer-box').classList.add('hidden');
+    const video = document.querySelector('iframe');
+    let source = video.src;
+    video.src = '';
+    video.src = source;
   });
 };
 
