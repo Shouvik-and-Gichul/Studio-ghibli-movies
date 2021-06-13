@@ -281,7 +281,7 @@ header {
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/Hero-image 1.jpg");
   background-size: 100% 100%;
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   height: 100vh;
 }
 
@@ -344,13 +344,6 @@ header {
 .spirited-away header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 1, 1, 0.38)), to(rgba(18, 8, 8, 0.085))), url("../../images/header-images/spirited-away-header.jpg");
   background-image: linear-gradient(rgba(11, 1, 1, 0.38), rgba(18, 8, 8, 0.085)), url("../../images/header-images/spirited-away-header.jpg");
-}
-
-.spirited-away li a:hover,
-.spirited-away li a:focus {
-  border-bottom: 1px solid #fcf2da;
-  -webkit-box-shadow: -1px 1px 2px #ffeac1;
-          box-shadow: -1px 1px 2px #ffeac1;
 }
 
 .spirited-away li a:hover,
@@ -671,9 +664,18 @@ li a:focus {
   position: relative;
   display: grid;
   grid-template-columns: 1.5fr 2.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "img contents";
+}
+.about-flex img {
+  grid-area: img;
+}
+.about-flex .contents {
+  grid-area: contents;
 }
 .about-flex .contents button {
   margin-top: 15px;
+  margin-right: 20px;
   padding: 8px;
 }
 .about-flex p {
@@ -700,9 +702,51 @@ li a:focus {
   color: white;
 }
 
+.other-films {
+  padding: 30px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.other-films .films {
+  text-align: center;
+}
+.other-films .films ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+}
+.other-films .films ul li {
+  padding: 0 10px;
+}
+.other-films .films ul li a:hover,
+.other-films .films ul li a:focus {
+  border-bottom: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.other-films .films img {
+  width: 200px;
+  height: 250px;
+}
+.other-films .films .backHome {
+  padding: 8px;
+  background-color: white;
+  color: black;
+}
+.other-films .films .backHome:hover, .other-films .films .backHome:focus {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+
 html {
   font-size: 125%;
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -714,8 +758,8 @@ p {
 }
 
 h1 {
+  width: 10%;
   font-size: 3.5rem;
-  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 75px;
@@ -809,7 +853,7 @@ p {
 .gallery ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  grid-gap: 20px;
+  gap: 20px;
   padding: 0px 0px 50px;
   margin: 0px;
 }
@@ -930,7 +974,7 @@ footer a:focus {
     height: 70vh;
   }
 
-  .about-flex h2 {
+  .home-about-flex h2 {
     text-align: center;
   }
 
@@ -939,19 +983,19 @@ footer a:focus {
     height: 60px;
   }
 
-  .about-flex {
+  .home-about-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 
-  .about-flex div:nth-of-type(1),
-.about-flex div:nth-of-type(2) {
+  .home-about-flex div:nth-of-type(1),
+.home-about-flex div:nth-of-type(2) {
     width: 100%;
   }
 
-  .about-flex div:nth-of-type(1) {
+  .home-about-flex div:nth-of-type(1) {
     margin: 0px 0px 25px;
   }
 
@@ -976,7 +1020,7 @@ footer a:focus {
     height: 40px;
   }
 
-  .about-flex p {
+  .home-about-flex p {
     text-align: center;
   }
 
@@ -989,20 +1033,42 @@ footer a:focus {
     padding: 0px 10px;
   }
 }
-@media (max-width: 845px) {
-  .about-castle-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media (max-width: 850px) {
+  .about-flex {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img" "contents";
+  }
+  .about-flex img {
+    margin: 0 auto;
   }
 
-  .castle-in-the-sky .about-castle .about-castle-flex .castle-contents {
+  .contents {
     margin: 50px 0px 0px;
   }
 
-  .about-castle-flex div:nth-of-type(1) img {
+  .trailer-box {
+    top: 15%;
+    right: 15%;
+  }
+
+  .about-flex div:nth-of-type(1) img {
     width: 270px;
     height: 350px;
+  }
+
+  .other-films .films img {
+    width: 150px;
+    height: 200px;
+  }
+}
+@media (max-width: 720px) {
+  .trailer-box iframe {
+    width: 400px;
+  }
+}
+@media (max-width: 530px) {
+  .trailer-box iframe {
+    width: 300px;
   }
 }

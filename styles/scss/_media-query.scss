@@ -17,7 +17,7 @@
     height: 70vh;
   }
 
-  .about-flex h2 {
+  .home-about-flex h2 {
     text-align: center;
   }
 
@@ -26,16 +26,16 @@
     height: 60px;
   }
 
-  .about-flex {
+  .home-about-flex {
     flex-direction: column;
   }
 
-  .about-flex div:nth-of-type(1),
-  .about-flex div:nth-of-type(2) {
+  .home-about-flex div:nth-of-type(1),
+  .home-about-flex div:nth-of-type(2) {
     width: 100%;
   }
 
-  .about-flex div:nth-of-type(1) {
+  .home-about-flex div:nth-of-type(1) {
     margin: 0px 0px 25px;
   }
 
@@ -62,7 +62,7 @@
     height: 40px;
   }
 
-  .about-flex p {
+  .home-about-flex p {
     text-align: center;
   }
 
@@ -79,25 +79,49 @@
 }
 
 // Movie pages:
-@media (max-width: 845px) {
-
-  .about-castle-flex {
-    // display: flex;
-    flex-direction: column;
+@media (max-width: 850px) {
+  .about-flex {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      'img'
+      'contents';
+    img {
+      margin: 0 auto;
+    }
   }
-
-  .castle-in-the-sky .about-castle .about-castle-flex .castle-contents {
+  .contents {
     margin: 50px 0px 0px;
   }
 
-  // .castle-in-the-sky .trailer-box {
-  //   // bottom: 100px;
-  //   // top: 1000px;
-  // }
+  .trailer-box {
+    top: 15%;
+    right: 15%;
+  }
 
-  .about-castle-flex div:nth-of-type(1) img {
+  .about-flex div:nth-of-type(1) img {
     width: 270px;
     height: 350px;
   }
 
+  .other-films {
+    .films {
+      img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .trailer-box iframe {
+    width: 400px;
+  }
+}
+
+@media (max-width: 530px) {
+  .trailer-box iframe {
+    width: 300px;
+  }
 }
