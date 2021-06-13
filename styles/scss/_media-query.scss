@@ -79,7 +79,7 @@
 }
 
 // Movie pages:
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .about-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -115,4 +115,9 @@
   .trailer-box iframe {
     width: 300px;
   }
+
+  .other-films .films ul {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
 }
+
