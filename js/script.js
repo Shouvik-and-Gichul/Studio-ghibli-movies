@@ -10,7 +10,11 @@ app.url = 'https://ghibliapi.herokuapp.com/films';
 app.getContents = function () {
   fetch(app.url)
     .then(function (response) {
-      return response.json();
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('API is not available at this moment');
+      }
     })
     .then(function (apiData) {
       app.displayContents(apiData);
