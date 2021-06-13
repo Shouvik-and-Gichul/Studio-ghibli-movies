@@ -103,6 +103,15 @@
     width: 270px;
     height: 350px;
   }
+
+  .other-films {
+    .films {
+      img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  }
 }
 
 @media (max-width: 720px) {

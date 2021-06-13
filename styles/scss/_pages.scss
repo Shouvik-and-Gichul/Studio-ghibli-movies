@@ -58,6 +58,7 @@ li a:focus {
   .contents button {
     // margin-left: 30px;
     margin-top: 15px;
+    margin-right: 20px;
     padding: 8px;
   }
   p {
@@ -83,5 +84,42 @@ li a:focus {
     font-size: 1rem;
     background: transparent;
     color: white;
+  }
+}
+
+.other-films {
+  padding: 30px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+  .films {
+    text-align: center;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-left: 0;
+      li {
+        padding: 0 10px;
+        a:hover,
+        a:focus {
+          border-bottom: none;
+          box-shadow: none;
+        }
+      }
+    }
+    img {
+      width: 200px;
+      height: 250px;
+    }
+    .backHome {
+      padding: 8px;
+      background-color: white;
+      color: black;
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        color: white;
+        background-color: black;
+      }
+    }
   }
 }

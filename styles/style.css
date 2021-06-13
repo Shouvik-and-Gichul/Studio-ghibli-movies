@@ -675,6 +675,7 @@ li a:focus {
 }
 .about-flex .contents button {
   margin-top: 15px;
+  margin-right: 20px;
   padding: 8px;
 }
 .about-flex p {
@@ -699,6 +700,48 @@ li a:focus {
   font-size: 1rem;
   background: transparent;
   color: white;
+}
+
+.other-films {
+  padding: 30px 0px 40px;
+  background-color: rgba(7, 7, 7, 0.941);
+}
+.other-films .films {
+  text-align: center;
+}
+.other-films .films ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+}
+.other-films .films ul li {
+  padding: 0 10px;
+}
+.other-films .films ul li a:hover,
+.other-films .films ul li a:focus {
+  border-bottom: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.other-films .films img {
+  width: 200px;
+  height: 250px;
+}
+.other-films .films .backHome {
+  padding: 8px;
+  background-color: white;
+  color: black;
+}
+.other-films .films .backHome:hover, .other-films .films .backHome:focus {
+  cursor: pointer;
+  color: white;
+  background-color: black;
 }
 
 html {
@@ -810,7 +853,7 @@ p {
 .gallery ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  grid-gap: 20px;
+  gap: 20px;
   padding: 0px 0px 50px;
   margin: 0px;
 }
@@ -1012,6 +1055,11 @@ footer a:focus {
   .about-flex div:nth-of-type(1) img {
     width: 270px;
     height: 350px;
+  }
+
+  .other-films .films img {
+    width: 150px;
+    height: 200px;
   }
 }
 @media (max-width: 720px) {

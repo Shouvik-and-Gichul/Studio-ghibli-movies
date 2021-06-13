@@ -10,11 +10,9 @@ app.url = 'https://ghibliapi.herokuapp.com/films';
 app.getContents = function () {
   fetch(app.url)
     .then(function (response) {
-      console.log(response);
       return response.json();
     })
     .then(function (apiData) {
-      console.log(apiData);
       app.displayContents(apiData);
     });
 };
@@ -289,12 +287,19 @@ app.closeTrailerByWindow = function () {
   });
 };
 
+app.viewFilms = function () {
+  const openFilms = document.querySelector('.open-films');
+  openFilms.addEventListener('click', function () {
+    document.querySelector('.other-films').classList.toggle('hidden');
+  });
+};
+
 app.init = function () {
   app.getContents();
-
   app.displayTrailer();
   app.closeTrailer();
   app.closeTrailerByWindow();
+  app.viewFilms();
 };
 
 app.init();
